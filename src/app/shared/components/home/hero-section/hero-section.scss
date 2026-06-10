@@ -1,0 +1,24 @@
+.full_width {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: green;
+}
+
+.hero {
+    width: 100%;
+    max-width: 1920px;
+
+    height: 100dvh;
+
+    background-image: url('/assets/img/backgrounds/hero.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    background-color: blue;
+    height: 120px;
+    width: 100%;
+}
