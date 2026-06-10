@@ -71,3 +71,85 @@
     background-image: url('/assets/animation_img/header/1.png');
     clip-path: inset(0 0 100% 0);
 }
+
+.language_toggle_section {
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+.language_toggle_section p {
+    color: white;
+    transition: color 250ms ease;
+}
+
+.language_toggle_section p.active-language {
+    color: #F87A55;
+}
+
+.language-toggle {
+    width: 40px;
+    height: 10px;
+    background-color: #F87A55;
+    border: 1px solid white;
+    border-radius: 999px;
+    position: relative;
+    cursor: pointer;
+}
+
+.language-toggle__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3355FF;
+    border: 1px solid white;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 250ms ease;
+}
+
+.language-toggle.active .language-toggle__circle {
+    left: calc(100% - 10px);
+}
+
+.language {
+    position: relative;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+
+    z-index: 1;
+}
+
+.language::before {
+    content: "";
+    position: absolute;
+    width: 180%;
+    height: 180%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('/assets/animation_img/header/Toggle.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+    transition:
+        clip-path 300ms ease-out,
+        opacity 150ms ease;
+    z-index: -1;
+}
+
+.language:not(.active-language):hover::before {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+}

@@ -5,7 +5,19 @@
         <a href="#" class="nav_link nav_link--skills">Skills</a>
         <a href="#" class="nav_link nav_link--projects">Projects</a>
         <a href="#" class="nav_link nav_link--contact">Contact</a>
-        <img [src]="'/assets/icons/placeholder/11_Toggle.png'">
+        <section class="language_toggle_section">
+            <p class="language language-de" [class.active-language]="!isEnglish">
+                DE
+            </p>
+
+            <div class="language-toggle" [class.active]="isEnglish" (click)="toggleLanguage()">
+                <div class="language-toggle__circle"></div>
+            </div>
+
+            <p class="language language-en" [class.active-language]="isEnglish">
+                EN
+            </p>
+        </section>
     </nav>
 
 </section>
