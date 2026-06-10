@@ -23,3 +23,51 @@
         text-decoration: none;
     }
 }
+
+.nav_link--skills::before {
+    background-image: url('/assets/animation_img/header/2.png');
+}
+
+.nav_link--projects::before {
+    background-image: url('/assets/animation_img/header/3.png');
+}
+
+.nav_link--contact::before {
+    background-image: url('/assets/animation_img/header/4.png');
+}
+
+.nav_link {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+}
+
+.nav_link::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+    transition:
+        clip-path 400ms ease-out,
+        opacity 150ms ease;
+    z-index: -1;
+}
+
+.nav_link:hover::before {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+}
+
+.nav_link--about::before {
+    background-image: url('/assets/animation_img/header/1.png');
+    clip-path: inset(0 0 100% 0);
+}
