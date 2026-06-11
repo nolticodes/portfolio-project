@@ -24,17 +24,7 @@
     }
 }
 
-.nav_link--skills::before {
-    background-image: url('/assets/animation_img/header/2.png');
-}
 
-.nav_link--projects::before {
-    background-image: url('/assets/animation_img/header/3.png');
-}
-
-.nav_link--contact::before {
-    background-image: url('/assets/animation_img/header/4.png');
-}
 
 .nav_link {
     position: relative;
@@ -61,7 +51,17 @@
         opacity 150ms ease;
     z-index: -1;
 }
+.nav_link--skills::before {
+    background-image: url('/assets/animation_img/header/2.png');
+}
 
+.nav_link--projects::before {
+    background-image: url('/assets/animation_img/header/3.png');
+}
+
+.nav_link--contact::before {
+    background-image: url('/assets/animation_img/header/4.png');
+}
 .nav_link:hover::before {
     opacity: 1;
     clip-path: inset(0 0 0 0);

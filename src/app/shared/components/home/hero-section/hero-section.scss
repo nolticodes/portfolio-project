@@ -2,23 +2,122 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: green;
+
+    &__hero {
+        background-color: green;
+        background-image: url('/assets/img/backgrounds/hero.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 
 .hero {
     width: 100%;
     max-width: 1920px;
-
     height: 100dvh;
-
-    background-image: url('/assets/img/backgrounds/hero.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    max-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 120px;
 }
 
 .header {
     background-color: blue;
     height: 120px;
     width: 100%;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 120px;
+}
+
+.headline {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.headline h1:first-child {
+    align-self: flex-start;
+}
+
+.headline h1:last-child {
+    align-self: flex-end;
+}
+
+.hero p {
+    color: white;
+    font-size: 20px;
+}
+
+.text_section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    img {
+        position: absolute;
+        width: 240px;
+        right: 20%;
+        top: 20%;
+        transform: rotate(5deg);
+    }
+}
+
+.text {
+    width: fit-content;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 24px;
+    padding: 8px 24px;
+}
+
+.text__get_in_touch {
+    margin-left: auto;
+}
+
+.contact_icons {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    gap: 8px;
+
+    &__hover {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid white;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+
+    &__hover::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background-color: #3355FF;
+
+        /* Kreis startet unten mittig */
+        clip-path: circle(0% at 50% 100%);
+
+        transition: clip-path 300ms ease;
+
+        z-index: 0;
+    }
+
+    &__hover:hover::before {
+        clip-path: circle(150% at 50% 100%);
+    }
+
+    &__hover img {
+        display: block;
+        position: relative;
+        z-index: 1;
+        padding: 4px;
+    }
 }
