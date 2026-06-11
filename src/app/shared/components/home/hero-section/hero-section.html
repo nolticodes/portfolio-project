@@ -4,10 +4,15 @@
 
             <img [src]="'./assets/stickers/polaroid_frame.png'">
 
-            <div class="text text__hello_world">
-                <p>Hallo Welt</p>
+            <div class="text text__hello_world" [class.text--large]="displayText === hoverText"
+                [class.text--fade]="isTextFading" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+
+                <p (transitionend)="onTextTransitionEnd($event)">
+                    {{ displayText }}
+                </p>
+
             </div>
-            
+
             <div class="headline">
                 <h1 appChangeLetterHover>Frontend</h1>
                 <h1 appChangeLetterHover>DEVELOPER</h1>

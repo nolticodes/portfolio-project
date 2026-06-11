@@ -32,7 +32,7 @@
 
 .hero h1 {
     color: white;
-    font-size: 120px;
+    font-size: 160px;
 }
 
 .headline {
@@ -69,12 +69,70 @@
 }
 
 .text {
-    width: fit-content;
-    display: inline-block;
+    position: relative;
+    width: 142px;
+    padding: 8px 24px;
+    color: white;
+
+    transition: width 300ms ease;
+}
+
+
+.text::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     border: 2px solid white;
     border-radius: 24px;
-    padding: 8px 24px;
+    transform-origin: left center;
+    pointer-events: none;
 }
+
+.text--large {
+    width: 240px;
+}
+
+/* Nur der Rahmen wobbelt */
+.text--large::before {
+    animation: wobble 1000ms ease-out;
+}
+
+.text p {
+    opacity: 1;
+    white-space: nowrap;
+
+    transition: opacity 200ms ease;
+}
+
+.text--fade p {
+    opacity: 0;
+}
+
+@keyframes wobble {
+    0% {
+        transform: scaleX(1);
+    }
+    40% {
+        transform: scaleX(1.02);
+    }
+    70% {
+        transform: scaleX(0.99);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.text p {
+    opacity: 1;
+    white-space: nowrap;
+    transition: opacity 200ms ease;
+}
+
+.text--fade p {
+    opacity: 0;
+}
+
 
 .text__get_in_touch {
     margin-left: auto;
