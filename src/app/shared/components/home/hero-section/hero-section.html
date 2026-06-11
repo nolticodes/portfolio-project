@@ -2,10 +2,24 @@
     <div class="hero">
         <div class="text_section">
 
-            <img [src]="'./assets/stickers/polaroid_frame.png'">
+            <div class="text_section__polaroid_sticker">
+                <img [src]="'./assets/stickers/polaroid_frame.png'">
+            </div>
 
-            <div class="text text__hello_world" [class.text--large]="displayText === hoverText"
-                [class.text--fade]="isTextFading" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+            <div class="text text__hello_world" 
+
+                [class.text--large]="isHovered"
+                [class.text--fade]="isTextFading" 
+                [class.text--shrink]="isTextShrinking"
+                (animationend)="onTextAnimationEnd($event)"
+                (mouseenter)="onMouseEnter()" 
+                (mouseleave)="onMouseLeave()">
+
+                <div class="text__background"></div>
+
+                <img class="waving_hand" [class.waving_hand--visible]="isHovered && !isHandLeaving"
+                    [class.waving_hand--exit]="isHandLeaving" (animationend)="onHandAnimationEnd()"
+                    [src]="'./assets/icons/hero/waving_hand.png'">
 
                 <p (transitionend)="onTextTransitionEnd($event)">
                     {{ displayText }}

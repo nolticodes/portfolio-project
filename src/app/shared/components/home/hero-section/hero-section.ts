@@ -15,16 +15,36 @@ export class HeroSection {
   hoverText = 'Ich bin Denis Nolting';
 
   private nextText = this.defaultText;
-
+  isHovered = false;
   isTextFading = false;
+  isTextShrinking = false;
+  isHandLeaving = false;
 
-  onMouseEnter() {
-    this.changeHeroText(this.hoverText);
-  }
+onMouseEnter() {
+  this.isHovered = true;
+  this.isHandLeaving = false;
+  this.isTextShrinking = false;
+  this.changeHeroText(this.hoverText);
+}
 
-  onMouseLeave() {
-    this.changeHeroText(this.defaultText);
+onMouseLeave() {
+  this.isHovered = false;
+  this.isHandLeaving = true;
+  this.isTextShrinking = true;
+  this.changeHeroText(this.defaultText);
+}
+
+onTextAnimationEnd(event: AnimationEvent) {
+  if (event.animationName === 'wobbleShrink') {
+    this.isTextShrinking = false;
   }
+}
+
+onHandAnimationEnd() {
+  if (this.isHandLeaving) {
+    this.isHandLeaving = false;
+  }
+}
 
   changeHeroText(newText: string) {
     if (newText === this.displayText) return;
