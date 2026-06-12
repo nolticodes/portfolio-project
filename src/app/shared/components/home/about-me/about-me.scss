@@ -1,0 +1,153 @@
+.about_me_section {
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+}
+
+.ripped_papers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    > * {
+        margin-top: -50px;
+    }
+
+    img {
+        width: 700px;
+
+    }
+}
+
+.ripped_paper_container {
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    
+}
+
+.ripped_paper_container img {
+    width: 100%;
+    max-width: 580px;
+    display: block;
+}
+
+.ripped_paper_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+        color: white;
+        font-size: 24px;
+        font-weight: 200;
+    }
+
+    img {
+        width: 40px;
+    }
+}
+
+.location {
+    rotate: -4deg;
+    z-index: 3;
+}
+
+.relocation {
+    rotate: -2deg;
+    z-index: 2;
+}
+
+.remote {
+    rotate: 4deg;
+    z-index: 1;
+}
+
+.about_me_text_section {
+    width: 100%;
+    max-width: 540px;
+    p {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    &__text p {
+        font-weight: 300;
+        
+    }
+
+    h2 {
+        font-size: 56px;
+        width: fit-content;
+        
+    }
+
+    &__headline {
+        img {
+            width: 250px;
+            padding-bottom: 48px;
+
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 24px;
+    }
+
+}
+
+.about_me_text_section__headline img {
+    width: 250px;
+
+    animation: drawLine 6s infinite ease-in-out;
+}
+
+@keyframes drawLine {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    3% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    60% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    63% {
+        clip-path: inset(0 100% 0 0 );
+    }
+
+    100% {
+        clip-path: inset(0 100% 0 0);
+    }
+}
+
+.btn_lets_talk {
+    font-size: 24px;
+    padding: 8px 24px;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 3px 4px 0 black;
+    border: 1px solid black;
+    transition: transform 200ms ease;
+
+    &:hover {
+        transform: translate(3px, 4px);
+        box-shadow: 0 0 0 white;
+        background-color: #F87A55;
+        color: white;
+    }
+}
+
+
