@@ -10,7 +10,6 @@ import { ChangeLetterHover } from '../../../directives/change-letter-hover';
 
 export class HeroSection {
   displayText = 'Hallo Welt';
-
   defaultText = 'Hallo Welt';
   hoverText = 'Ich bin Denis Nolting';
 

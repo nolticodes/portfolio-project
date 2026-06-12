@@ -17,51 +17,27 @@
     max-width: 1920px;
     height: 100dvh;
     max-height: 100dvh;
+    padding: 0 120px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 120px;
-}
 
-.header {
-    background-color: blue;
-    height: 120px;
-    width: 100%;
-}
+    h1 {
+        color: white;
+        font-size: 160px;
+    }
 
-.hero h1 {
-    color: white;
-    font-size: 160px;
-}
-
-.headline {
-    padding: 24px 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.headline h1:first-child {
-    align-self: flex-start;
-}
-
-.headline h1:last-child {
-    align-self: flex-end;
-}
-
-.hero p {
-    color: white;
-    font-size: 20px;
-}
-
-.text__hello_world {
-    position: relative;
+    p {
+        color: white;
+        font-size: 20px;
+    }
 }
 
 .text_section {
+    width: 80%;
     display: flex;
     flex-direction: column;
-    width: 80%;
 
     &__polaroid_sticker {
         img {
@@ -72,9 +48,83 @@
             transform: rotate(5deg);
         }
     }
+}
 
-    &__waving_hand img {
-        width: 40px;
+.text {
+    position: relative;
+    width: 142px;
+    padding: 8px 24px;
+    color: white;
+    transition: width 250ms ease-out;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border: 1px solid white;
+        border-radius: 24px;
+        transform-origin: left center;
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    &__background {
+        position: absolute;
+        inset: 0;
+        border-radius: 24px;
+        overflow: hidden;
+        z-index: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: #3355FF;
+            clip-path: circle(0% at 50% 100%);
+            transition: clip-path 300ms ease;
+        }
+    }
+
+    &:hover {
+        .text__background::before {
+            clip-path: circle(150% at 50% 100%);
+        }
+    }
+
+    p {
+        position: relative;
+        z-index: 2;
+        opacity: 1;
+        white-space: nowrap;
+        transition: opacity 150ms ease;
+    }
+
+    &--large {
+        width: 240px;
+
+        &::before {
+            animation: wobble 900ms ease-out;
+        }
+    }
+
+    &--fade {
+        p {
+            opacity: 0;
+        }
+    }
+
+    &--shrink {
+        &::before {
+            animation: wobbleShrink 900ms ease-out;
+        }
+    }
+
+    &__hello_world {
+        position: relative;
+    }
+
+    &__get_in_touch {
+        margin-left: auto;
     }
 }
 
@@ -85,14 +135,74 @@
     top: -41px;
     opacity: 0;
     transform: translateX(-20px) rotate(-150deg);
+    transform-origin: center center;
     pointer-events: none;
     z-index: 2;
-    transform-origin: center center;
+
+    &--visible {
+        opacity: 1;
+        animation: handEnter 900ms ease-out forwards;
+    }
+
+    &--exit {
+        opacity: 0;
+        animation: handExit 500ms linear forwards;
+    }
 }
 
-.waving_hand--visible {
-    opacity: 1;
-    animation: handEnter 900ms ease-out forwards;
+.headline {
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        &:first-child {
+            align-self: flex-start;
+        }
+
+        &:last-child {
+            align-self: flex-end;
+        }
+    }
+}
+
+.contact_icons {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    gap: 8px;
+
+    &__hover {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid white;
+        border-radius: 24px;
+        cursor: pointer;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: #3355FF;
+            clip-path: circle(0% at 50% 100%);
+            transition: clip-path 300ms ease;
+            z-index: 0;
+        }
+
+        &:hover {
+            &::before {
+                clip-path: circle(150% at 50% 100%);
+            }
+        }
+
+        img {
+            display: block;
+            position: relative;
+            z-index: 1;
+            padding: 4px;
+        }
+    }
 }
 
 @keyframes handEnter {
@@ -114,11 +224,6 @@
         transform: translateX(0) rotate(0deg);
         opacity: 1;
     }
-}
-
-.waving_hand--exit {
-    opacity: 0;
-    animation: handExit 500ms linear forwards;
 }
 
 @keyframes handExit {
@@ -153,75 +258,6 @@
     }
 }
 
-
-.text {
-    position: relative;
-    width: 142px;
-    padding: 8px 24px;
-    color: white;
-    transition: width 250ms ease-out;
-
-}
-
-.text__background {
-    position: absolute;
-    inset: 0;
-
-    border-radius: 24px;
-    overflow: hidden;
-
-    z-index: 0;
-}
-
-.text__background::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background-color: #3355FF;
-
-    clip-path: circle(0% at 50% 100%);
-    transition: clip-path 300ms ease;
-}
-
-.text:hover .text__background::before {
-    clip-path: circle(150% at 50% 100%);
-}
-
-.text p {
-    position: relative;
-    z-index: 2;
-}
-
-.waving_hand {
-    z-index: 2;
-}
-
-
-.text::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border: 1px solid white;
-    border-radius: 24px;
-    transform-origin: left center;
-    pointer-events: none;
-    z-index: 1;
-}
-
-.text--large {
-    width: 240px;
-}
-
-
-.text--fade p {
-    opacity: 0;
-}
-
-.text--large::before {
-    animation: wobble 900ms ease-out
-}
-
 @keyframes wobble {
     0% {
         transform: scaleX(1);
@@ -240,68 +276,6 @@
     }
 }
 
-.text p {
-    opacity: 1;
-    white-space: nowrap;
-    transition: opacity 150ms ease;
-}
-
-.text--fade p {
-    opacity: 0;
-}
-
-
-.text__get_in_touch {
-    margin-left: auto;
-}
-
-
-.contact_icons {
-    display: flex;
-    flex-direction: column;
-    margin-right: auto;
-    gap: 8px;
-
-    &__hover {
-        display: inline-block;
-        position: relative;
-        overflow: hidden;
-        border: 2px solid white;
-        border-radius: 24px;
-        cursor: pointer;
-    }
-
-    &__hover::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-
-        background-color: #3355FF;
-
-        clip-path: circle(0% at 50% 100%);
-
-        transition: clip-path 300ms ease;
-
-        z-index: 0;
-    }
-
-    &__hover:hover::before {
-        clip-path: circle(150% at 50% 100%);
-    }
-
-    &__hover img {
-        display: block;
-        position: relative;
-        z-index: 1;
-        padding: 4px;
-    }
-}
-
-
-.text--shrink::before {
-    animation: wobbleShrink 900ms ease-out;
-}
-
 @keyframes wobbleShrink {
     0% {
         transform: scaleX(1);
@@ -317,5 +291,47 @@
 
     100% {
         transform: scaleX(1);
+    }
+}
+
+.text__get_in_touch {
+    width: 160px;
+    border-radius: 24px;
+    box-shadow: 3px 4px 0 white;
+
+    transition:
+        transform 200ms ease,
+        box-shadow 200ms ease;
+
+    &:hover {
+        transform: translate(3px, 4px);
+        box-shadow: 0 0 0 white;
+
+        &::before {
+            clip-path: circle(150% at 50% 100%);
+            box-shadow: 0px 0px 0 white;
+            border-radius: 24px;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        border: 1px solid white;
+        border-radius: 24px;
+
+        pointer-events: none;
+        z-index: 2;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: #F87A55;
+        clip-path: circle(0% at 50% 100%);
+        transition: clip-path 300ms ease;
     }
 }
