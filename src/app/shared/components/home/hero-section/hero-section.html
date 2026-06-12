@@ -3,17 +3,20 @@
         <div class="text_section">
 
             <div class="text_section__polaroid_sticker">
+                <div class="text_section__polaroid_sticker__profile_img">
+                    <div class="profile_img profile_img__default"></div>
+                    <div class="profile_img profile_img__hover"></div>
+                </div>
+                <div class="polaroid_text">
+                    <span class="polaroid_text__default">Denis :)</span>
+                    <span class="polaroid_text__hover">Denis :D</span>
+                </div>
                 <img [src]="'./assets/stickers/polaroid_frame.png'">
             </div>
 
-            <div class="text text__hello_world" 
-
-                [class.text--large]="isHovered"
-                [class.text--fade]="isTextFading" 
-                [class.text--shrink]="isTextShrinking"
-                (animationend)="onTextAnimationEnd($event)"
-                (mouseenter)="onMouseEnter()" 
-                (mouseleave)="onMouseLeave()">
+            <div class="text text__hello_world" [class.text--large]="isHovered" [class.text--fade]="isTextFading"
+                [class.text--shrink]="isTextShrinking" (animationend)="onTextAnimationEnd($event)"
+                (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
 
                 <div class="text__background"></div>
 

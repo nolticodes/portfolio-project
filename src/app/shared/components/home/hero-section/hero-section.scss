@@ -34,18 +34,114 @@
     }
 }
 
-.text_section {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
 
-    &__polaroid_sticker {
-        img {
-            position: absolute;
-            width: 240px;
-            right: 20%;
-            top: 20%;
-            transform: rotate(5deg);
+
+.text_section__polaroid_sticker {
+    position: relative;
+    width: 240px;
+    align-self: flex-end;
+    margin-right: 20%;
+    transform: translate(800px, 200px) rotate(5deg);
+
+    &:hover {
+        .profile_img__default {
+            opacity: 0;
+        }
+
+        .profile_img__hover {
+            opacity: 1;
+        }
+    }
+
+    > img {
+        position: relative;
+        width: 100%;
+        display: block;
+        z-index: 2;
+    }
+
+    &__profile_img {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        z-index: 2;
+        width: 210px;
+        height: 220px;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+}
+
+.profile_img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 300ms ease;
+
+    &__default {
+        background-image: url('/assets/img/profile/profile.jpg');
+        opacity: 1;
+        z-index: 1;
+    }
+
+    &__hover {
+        background-image: url('/assets/img/profile/profile_grey.png');
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
+.polaroid_text {
+    position: absolute;
+    bottom: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+
+    span {
+        font-family: "Kalam", sans-serif;
+        font-size: 32px;
+    }
+
+
+    &__default,
+    &__hover {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        transition: opacity 300ms ease;
+    }
+
+    &__default {
+        opacity: 1;
+    }
+
+    &__hover {
+        opacity: 0;
+    }
+}
+
+.text_section__polaroid_sticker {
+    &:hover {
+        .profile_img__default {
+            opacity: 0;
+        }
+
+        .profile_img__hover {
+            opacity: 1;
+        }
+
+        .polaroid_text__default {
+            opacity: 0;
+        }
+
+        .polaroid_text__hover {
+            opacity: 1;
         }
     }
 }
@@ -151,6 +247,8 @@
 }
 
 .headline {
+    width: 1000px;
+
     padding: 24px 0;
     display: flex;
     flex-direction: column;
@@ -165,6 +263,7 @@
         }
     }
 }
+
 
 .contact_icons {
     display: flex;
