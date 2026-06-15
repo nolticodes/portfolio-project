@@ -20,4 +20,17 @@
         </section>
     </nav>
 
+    <nav class="header__navbar header__navbar_mobile">
+        <img [src]="'/assets/icons/placeholder/Vector.png'">
+
+        <div class="container_burger_menu" [class.nav-open]="isNavOpen">
+            <button class="menu-toggle" type="button" (click)="toggleMenu()">
+                <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+                <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+                <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+            </button>
+        </div>
+
+    </nav>
+
 </section>

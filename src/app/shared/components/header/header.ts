@@ -12,4 +12,10 @@ export class Header {
   toggleLanguage() {
     this.isEnglish = !this.isEnglish;
   }
+
+  isNavOpen = false;
+
+  toggleMenu() {
+    this.isNavOpen = !this.isNavOpen;
+  }
 }
