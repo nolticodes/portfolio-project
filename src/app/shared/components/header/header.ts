@@ -7,13 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './header.scss',
 })
 export class Header {
-  isEnglish = false;
+  isEnglish = true;
+  isNavOpen = false;
 
   toggleLanguage() {
     this.isEnglish = !this.isEnglish;
   }
 
-  isNavOpen = false;
+    setLanguage(isEnglish: boolean) {
+    this.isEnglish = isEnglish;
+  }
 
   toggleMenu() {
     this.isNavOpen = !this.isNavOpen;
