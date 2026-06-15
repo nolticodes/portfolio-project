@@ -33,24 +33,27 @@
 
     </nav>
 
-    <div class="burger_menu_selection">
+    <div class="burger_menu_selection" [class.burger_menu_selection__visible]="isNavOpen">
+
         <a href="#" class="nav_link nav_link--about">About me</a>
         <a href="#" class="nav_link nav_link--skills">Skills</a>
         <a href="#" class="nav_link nav_link--projects">Projects</a>
         <a href="#" class="nav_link nav_link--contact">Contact</a>
+
         <section class="language_toggle_section">
-            <p class="language language-de" [class.active-language]="!isEnglish">
-                DE
+            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)">
+                EN
             </p>
 
             <div class="language-toggle" [class.active]="isEnglish" (click)="toggleLanguage()">
                 <div class="language-toggle__circle"></div>
             </div>
 
-            <p class="language language-en" [class.active-language]="isEnglish">
-                EN
+            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)">
+                DE
             </p>
         </section>
+
         <div class="contact_icons">
             <div class="contact_icons__hover">
                 <img [src]="'./assets/icons/contact_icons/Linkedin.png'">
@@ -61,8 +64,8 @@
             <div class="contact_icons__hover">
                 <img [src]="'./assets/icons/contact_icons/Mail.png'">
             </div>
-
         </div>
+
     </div>
 
 
