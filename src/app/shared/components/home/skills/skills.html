@@ -33,6 +33,14 @@
 
             <img class="peel_sticker" [src]="pullToPeelImages[currentStickerIndex]" (click)="changeStickerImage()">
 
+            @if(currentStickerIndex === 2) {
+                <div class="skills_container_right_sticker_text_overlay" (click)="changeStickerImage()">
+                    <p>I'm learning more every day! <br> Next up: <br> backend development skills</p>
+                </div>
+            }
+
+
+
         </div>
     </section>
 </section>

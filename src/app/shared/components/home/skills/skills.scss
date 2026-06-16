@@ -118,6 +118,41 @@
 
     &_right {
         width: 25%;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        transform: rotate(7deg);
+
+        img {
+            width: 240px;
+            height: 240px;
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+
+        &_sticker_text_overlay {
+            width: 240px;
+            height: 240px;
+            position: absolute;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            p {
+                font-size: 20px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 240px;
+                height: 240px;
+                padding: 16px;
+            }
+        }
     }
 }
 
@@ -138,20 +173,5 @@
         filter: grayscale(0%);
         transform: scale(0.9);
 
-    }
-}
-
-.skills_container_right {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    transform: rotate(7deg);
-
-    img {
-        width: 240px;
-    }
-
-    img:hover {
-        cursor: pointer;
     }
 }
