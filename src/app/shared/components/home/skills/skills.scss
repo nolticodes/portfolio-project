@@ -46,7 +46,6 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding-right: 40px;
 
         p {
             font-size: 20px;
@@ -62,7 +61,7 @@
             z-index: 1;
             position: absolute;
             top: 40px;
-            left: 40px;
+            right: 0px;
 
 
             img {
@@ -81,20 +80,34 @@
         align-items: center;
     }
 
+    &_middle_ripped_paper {
+        align-self: flex-start;
+        position: relative;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        height: 250px;
+
+        img {
+            width: 700px;
+            height: 250px;
+        }
+    }
+
     &_middle_text {
+        position: absolute;
+        top: 0;
         width: 100%;
-        height: 150px;
-        background-image: url('/assets/stickers/skills/skills_paper.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
         display: flex;
         align-items: center;
         padding: 0 24px;
-        margin-bottom: 40px;
 
         p {
+            font-size: 18px;
+            height: 250px;
             color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -125,8 +138,8 @@
         transform: rotate(7deg);
 
         img {
-            width: 240px;
-            height: 240px;
+            width: 200px;
+            height: 200px;
         }
 
         img:hover {
@@ -134,8 +147,8 @@
         }
 
         &_sticker_text_overlay {
-            width: 240px;
-            height: 240px;
+            width: 200px;
+            height: 200px;
             position: absolute;
 
             &:hover {
@@ -148,8 +161,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: 240px;
-                height: 240px;
+                width: 200px;
+                height: 200px;
                 padding: 16px;
             }
         }
@@ -173,5 +186,73 @@
         filter: grayscale(0%);
         transform: scale(0.9);
 
+    }
+}
+
+@media (max-width: 1150px) {
+    .skills_container {
+        flex-direction: column;
+
+        &_left {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &_middle {
+            width: 100%;
+
+            &_ripped_paper {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 40px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &_right {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .skills_container {
+        padding: 80px 24px;
+        padding-bottom: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills_container_middle_ripped_paper {
+        height: 350px;
+
+        img {
+            height: 350px;
+        }
+    }
+
+    .skills_container_middle_text {
+        p {
+            height: 350px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .skills_container_middle_ripped_paper {
+        height: 450px;
+
+        img {
+            height: 450px;
+        }
+    }
+
+    .skills_container_middle_text {
+        p {
+            height: 450px;
+        }
     }
 }

@@ -15,9 +15,18 @@
 
 
         <div class="skills_container_middle">
-            <div class="skills_container_middle_text">
-                <p>Moin du Landratte</p>
+
+            <div class="skills_container_middle_ripped_paper">
+                <img [src]="'/assets/stickers/skills/skills_paper.png'">
+                <div class="skills_container_middle_text">
+                    <p>Working with modern frontend technologies has given me a strong foundation in building responsive
+                        and user-friendly web applications. I enjoy learning new concepts, improving my problem-solving
+                        skills, and continuously growing as a developer. I'm always open to new technologies and
+                        currently expanding my expertise into backend development.
+                    </p>
+                </div>
             </div>
+
 
             <div class="skills_container_middle_skillicons">
                 @for (skill of frontendSkills; track skill.name) {
@@ -34,9 +43,9 @@
             <img class="peel_sticker" [src]="pullToPeelImages[currentStickerIndex]" (click)="changeStickerImage()">
 
             @if(currentStickerIndex === 2) {
-                <div class="skills_container_right_sticker_text_overlay" (click)="changeStickerImage()">
-                    <p>I'm learning more every day! <br> Next up: <br> backend development skills</p>
-                </div>
+            <div class="skills_container_right_sticker_text_overlay" (click)="changeStickerImage()">
+                <p>I'm learning more every day! <br> Next up: <br> backend development skills</p>
+            </div>
             }
 
 
