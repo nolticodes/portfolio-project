@@ -1,0 +1,14 @@
+{
+    "header": {
+        "aboutMe": "Über Mich",
+        "skills": "Fähigkeiten",
+        "projects": "Projekte",
+        "contact": "Kontakt"
+    },
+
+    "hero": {},
+    "aboutMe": {},
+    "skills": {},
+    "projects": {},
+    "testimonials": {}
+}

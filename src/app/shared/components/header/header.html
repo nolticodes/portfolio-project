@@ -1,12 +1,12 @@
 <section class="full_width">
     <nav class="header__navbar">
         <img [src]="'/assets/icons/placeholder/Vector.png'">
-        <a href="#" class="nav_link nav_link--about">About me</a>
-        <a href="#" class="nav_link nav_link--skills">Skills</a>
-        <a href="#" class="nav_link nav_link--projects">Projects</a>
-        <a href="#" class="nav_link nav_link--contact">Contact</a>
+        <a href="#" class="nav_link nav_link--about">{{ 'header.aboutMe' | translate }}</a>
+        <a href="#" class="nav_link nav_link--skills">{{ 'header.skills' | translate }}</a>
+        <a href="#" class="nav_link nav_link--projects">{{ 'header.projects' | translate }}</a>
+        <a href="#" class="nav_link nav_link--contact">{{ 'header.contact' | translate }}</a>
         <section class="language_toggle_section">
-            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)">
+            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)" (click)="useLanguage('en')">
                 EN
             </p>
 
@@ -14,7 +14,7 @@
                 <div class="language-toggle__circle"></div>
             </div>
 
-            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)">
+            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)" (click)="useLanguage('de')">
                 DE
             </p>
         </section>
@@ -41,7 +41,7 @@
         <a href="#" class="nav_link nav_link--contact">Contact</a>
 
         <section class="language_toggle_section">
-            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)">
+            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)" (click)="useLanguage('en')">
                 EN
             </p>
 
@@ -49,7 +49,7 @@
                 <div class="language-toggle__circle"></div>
             </div>
 
-            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)">
+            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)" (click)="useLanguage('de')">
                 DE
             </p>
         </section>
