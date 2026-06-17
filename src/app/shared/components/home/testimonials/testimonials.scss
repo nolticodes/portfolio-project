@@ -1,0 +1,272 @@
+.full_width {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials {
+    width: 100%;
+    max-width: 1920px;
+    padding: 80px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials_headline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-bottom: 64px;
+
+    p {
+        font-size: 24px;
+        padding-bottom: 16px;
+    }
+
+    h2 {
+        font-size: 64px;
+    }
+
+    &_thin {
+        display: flex;
+        gap: 16px;
+
+        img {
+            animation: drawFromRight 10.5s infinite;
+        }
+    }
+}
+
+@keyframes drawFromRight {
+    0% {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    3% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    50% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    53% {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    100% {
+        clip-path: inset(0 0 0 100%);
+    }
+}
+
+.testimonials_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.testimonials_content_card {
+    width: auto;
+    height: 260px;
+    position: relative;
+    margin-left: -80px;
+    z-index: 1;
+
+    img {
+        width: auto;
+        height: 260px;
+    }
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:hover {
+        z-index: 10;
+
+        .testimonials_content_card_hover {
+            opacity: 1;
+        }
+
+        .testimonials_content_card_text_overlay_profile {
+            p {
+                color: white;
+            }
+
+            h3 {
+                color: white;
+            }
+        }
+    }
+
+    &_hover {
+        position: absolute;
+        top: 0;
+        transition: opacity 200ms ease-in;
+        opacity: 0;
+
+    }
+
+    &_text_overlay {
+        height: 260px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_comment {
+            p {
+                font-size: 20px;
+                font-weight: 250;
+            }
+
+            h3 {
+                font-size: 32px;
+            }
+        }
+
+        &_profile {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            p {
+                font-size: 16px;
+                font-weight: 350;
+                transition: color 200ms ease-in;
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 600;
+                transition: color 200ms ease-in;
+            }
+
+            svg {
+                transition: fill 200ms ease-in;
+            }
+
+            svg:hover {
+                fill: white
+            }
+
+        }
+    }
+}
+
+.rotate_left {
+    transform: rotate(-7deg);
+}
+
+.rotate_right {
+    transform: rotate(7deg);
+}
+
+
+@media (max-width: 1440px) {
+    .testimonials_content {
+        width: 800px;
+        flex-wrap: wrap;
+    }
+
+    .testimonials_content_card {
+        &:last-child {
+            margin-left: 0;
+            margin-top: -80px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .testimonials {
+        padding: 80px 24px;
+    }
+}
+
+@media (max-width: 850px) {
+    .testimonials_content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .testimonials_content_card {
+        margin-left: 0;
+
+        &:last-child {
+            margin-left: 0;
+            margin-top: 0px;
+        }
+    }
+
+    .testimonials_headline {
+        p {
+            font-size: 16px;
+            padding-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 48px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+
+    .testimonials_headline {
+        p {
+            font-size: 16px;
+            padding-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        &_thin {
+            img {
+                width: 70px;
+                animation: drawFromRight 10.5s infinite;
+            }
+        }
+    }
+
+    .testimonials_content_card {
+        height: 160px;
+
+        img {
+            height: 160px;
+        }
+
+        &_text_overlay {
+            height: 160px;
+            padding: 16px;
+
+            &_comment {
+                p {
+                    font-size: 14px;
+                    font-weight: 250;
+                }
+            }
+
+            &_profile {
+                h3 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

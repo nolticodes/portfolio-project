@@ -40,7 +40,7 @@ export class Skills {
         this.currentStickerIndex = 2;
         this.isPeeling = false;
         this.cdr.detectChanges();
-      }, 100);
+      }, 150);
     } else {
       this.currentStickerIndex = 0;
     }
