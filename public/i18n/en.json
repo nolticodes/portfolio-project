@@ -25,7 +25,12 @@
             "talk": "Let's talk" 
         },
 
-        "skills": {},
+        "skills": {
+            "stack": "MY STACK",
+            "skillSet": "Skill set",
+            "text": "Working with modern frontend technologies has given me a strong foundation in building responsive and user-friendly web applications. I enjoy learning new concepts, improving my problem-solving skills, and continuously growing as a developer. I'm always open to new technologies and currently expanding my expertise into backend development."
+        },
+
         "projects": {},
         "testimonials": {}
     }
