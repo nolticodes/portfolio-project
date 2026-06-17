@@ -12,7 +12,7 @@ export class Testimonials {
     {
       cardImage: 'assets/img/testimonials/testimonial_a.svg',
       hoverImage: 'assets/img/testimonials/testimonial_hover.svg',
-      name: 'Weihnachtsmann',
+      name: 'Weihnachtsmann1',
       commentKey: 'home.testimonials.comment_one',
       profileUrl: 'https://de.linkedin.com',
       rotationClass: 'rotate_left'
@@ -20,7 +20,7 @@ export class Testimonials {
     {
       cardImage: 'assets/img/testimonials/testimonial_b.svg',
       hoverImage: 'assets/img/testimonials/testimonial_hover.svg',
-      name: 'Weihnachtsmann',
+      name: 'Weihnachtsmann2',
       commentKey: 'home.testimonials.comment_two',
       profileUrl: 'https://de.linkedin.com',
       rotationClass: ''
@@ -28,7 +28,7 @@ export class Testimonials {
     {
       cardImage: 'assets/img/testimonials/testimonial_a.svg',
       hoverImage: 'assets/img/testimonials/testimonial_hover.svg',
-      name: 'Weihnachtsmann',
+      name: 'Weihnachtsmann3',
       commentKey: 'home.testimonials.comment_three',
       profileUrl: 'https://de.linkedin.com',
       rotationClass: 'rotate_right'
