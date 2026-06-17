@@ -5,7 +5,6 @@
         "projects": "Projekte",
         "contact": "Kontakt"
     },
-
     "home": {
         "hero": {
             "helloWorld": "Hallo Welt",
@@ -13,8 +12,16 @@
             "dev": "ENTWICKLER",
             "iBims": "Ich bin Denis Nolting"
         },
-
-        "aboutMe": {},
+        "aboutMe": {
+            "who": "WER IST DENIS?",
+            "about": "Über mich",
+            "based": "Wohnhaft in Hamburg",
+            "relocate": "Nicht bereit umzuziehen",
+            "remote": "Offen für Remote-Arbeit",
+            "introduction_one": "Hallo, ich bin Denis. Ich befinde mich in der Ausbildung zum Fullstack Developer und habe eine Leidenschaft für die Entwicklung interaktiver Webanwendungen sowie das Erlernen neuer Technologien. Ich stelle mich gerne Herausforderungen, finde elegante Lösungen und wachse mit jedem Projekt, das ich umsetze. Für mich ist Programmieren eine kontinuierliche Reise des Lernens und der Weiterentwicklung.",
+            "introduction_two": "Lass uns zusammenarbeiten und gemeinsam etwas Besonderes erschaffen!",
+            "talk": "Lass uns sprechen" 
+        },
         "skills": {},
         "projects": {},
         "testimonials": {}
