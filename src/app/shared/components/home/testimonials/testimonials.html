@@ -37,7 +37,7 @@
                             <p>{{ 'home.testimonials.dev' | translate }}</p>
                         </div>
 
-                        <div class="testimonials_content_card_text_overlay_profile_icon">
+                        <a class="testimonials_content_card_text_overlay_profile_icon" [href]="testimonial.profileUrl">
                             <svg width="18" height="18" viewBox="0 0 18 18" fill="black"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -47,7 +47,7 @@
                             <h4>
                                 {{ 'home.testimonials.profile' | translate }}
                             </h4>
-                        </div>
+                        </a>
 
                     </div>
 
