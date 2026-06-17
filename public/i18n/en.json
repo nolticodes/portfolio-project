@@ -6,24 +6,17 @@
         "contact": "Contact"
     },
 
-    "hero": {
+    "home": {
+        "hero": {
+            "helloWorld": "Hello World",
+            "getInTouch": "Get in touch",
+            "dev": "DEVELOPER",
+            "iBims": "I am Denis Nolting"
+        },
 
-    },
-
-    "aboutMe": {
-
-    },
-
-    "skills": {
-
-    },
-
-    "projects": {
-
-    },
-
-    "testimonials": {
-
+        "aboutMe": {},
+        "skills": {},
+        "projects": {},
+        "testimonials": {}
     }
-
 }

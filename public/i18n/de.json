@@ -6,9 +6,17 @@
         "contact": "Kontakt"
     },
 
-    "hero": {},
-    "aboutMe": {},
-    "skills": {},
-    "projects": {},
-    "testimonials": {}
+    "home": {
+        "hero": {
+            "helloWorld": "Hallo Welt",
+            "getInTouch": "Schreib mir",
+            "dev": "ENTWICKLER",
+            "iBims": "Ich bin Denis Nolting"
+        },
+
+        "aboutMe": {},
+        "skills": {},
+        "projects": {},
+        "testimonials": {}
+    }
 }
