@@ -31,7 +31,16 @@
             "text": "Working with modern frontend technologies has given me a strong foundation in building responsive and user-friendly web applications. I enjoy learning new concepts, improving my problem-solving skills, and continuously growing as a developer. I'm always open to new technologies and currently expanding my expertise into backend development."
         },
 
-        "projects": {},
-        "testimonials": {}
+        "testimonials": {
+            "words": "IN THEIR WORDS:",
+            "thoughts": "Colleagues Thoughts",
+            "dev": "Frontend Developer",
+            "profile": "Profile",
+            "comment_one": "placeholder",
+            "comment_two": "placeholder",
+            "comment_three": "placeholder"
+        },
+
+        "projects": {}
     }
 }

@@ -23,11 +23,20 @@
             "talk": "Lass uns sprechen"
         },
         "skills": {
-            "stack": "MEIN TECH-STACK",
+            "stack": "MEIN STACK",
             "skillSet": "Fähigkeiten",
             "text": "Die Arbeit mit modernen Frontend-Technologien hat mir eine starke Grundlage für die Entwicklung responsiver und benutzerfreundlicher Webanwendungen vermittelt. Ich lerne gerne neue Konzepte, verbessere kontinuierlich meine Problemlösungsfähigkeiten und entwickle mich stetig als Entwickler weiter. Ich bin stets offen für neue Technologien und erweitere derzeit mein Wissen im Bereich der Backend-Entwicklung."
         },
-        "projects": {},
-        "testimonials": {}
+        "testimonials": {
+            "words": "DAS SAGEN ANDERE:",
+            "thoughts": "Stimmen aus dem Team",
+            "dev": "Frontend Entwickler",
+            "profile": "Profil",
+            "comment_one": "Platzhalter",
+            "comment_two": "Platzhalter",
+            "comment_three": "Platzhalter"
+        },
+
+        "projects": {}
     }
 }

@@ -152,13 +152,35 @@
                 transition: color 200ms ease-in;
             }
 
-            svg {
-                transition: fill 200ms ease-in;
+            &_icon {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                &:hover {
+                    h4 {
+                        color: white;
+                    }
+
+                    svg {
+                        fill: white;
+                    }
+                }
+
+                h4 {
+                    color: black;
+                    font-size: 18px;
+                    font-weight: 400;
+                    transition: color 200ms ease-in;
+                }
+
+                svg {
+                    transition: fill 200ms ease-in;
+                }
+
             }
 
-            svg:hover {
-                fill: white
-            }
+
 
         }
     }
