@@ -2,20 +2,37 @@
     <div class="project_content">
 
         <div class="project_content_grid_element project_content_grid_element_single">
-            <p>MY CRAFT</p>
-            <h2>Projects</h2>
-            <p>Take a look at the projects I've worked on and the skills I've applied along the way. Each project includes a brief overview, key information, and the opportunity to explore it in more detail.</p>
+            <div class="project_content_grid_element_single_text">
+                <p>MY CRAFT</p>
+                <h2>Projects</h2>
+                <img [src]="'assets/animation_img/projects/line_orange.svg'">
+                <p>Take a look at the projects I've worked on and the skills I've applied along the way. Each project
+                    includes a brief overview, key information, and the opportunity to explore it in more detail.</p>
+            </div>
         </div>
-
 
         @for (project of projectData; track project.name) {
         <div class="project_content_grid_element">
-            <img [src]="project.imageUrl">
-            <h2>{{project.name}}</h2>
-            <p>{{project.description}}</p>
+            <div class="project_content_grid_element_img_wrapper">
+                <div class="floating_wrapper">
+                    <img [src]="project.imageUrl">
+                </div>
+
+                <div class="project_content_grid_element_img_wrapper_button">
+                    <button class="btn_lets_talk" (click)="openProject(project.path)">
+                        Project details
+                    </button>
+                </div>
+                <div class="project_content_grid_element_img_wrapper_sticker">
+                    <img [src]="'assets/stickers/projects/Sticker.svg'">
+                </div>
+            </div>
+            <div class="project_content_grid_element_text">
+                <h2>{{project.name}}</h2>
+                <p>{{project.description}}</p>
+            </div>
         </div>
         }
-
 
     </div>
 </section>

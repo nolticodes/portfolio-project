@@ -14,17 +14,24 @@ export class Projects {
     name: "Join",
     description: "...",
     imageUrl: "/assets/img/projects/Laptop.svg",
+    path: "https://www.google.com/"
   },
   {
     name: "El Pollo Loco",
     description: "...",
     imageUrl: "/assets/img/projects/Pollo.svg",
+    path: "https://www.google.com/",
   },
   {
     name: "Pokemon",
     description: "...",
     imageUrl: "/assets/img/projects/Pollo.svg",
+    path: "https://www.google.com/"
   },
 ];
+
+openProject(path: string) {
+  window.open(path, '_blank');
+}
   
 }
