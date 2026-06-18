@@ -1,0 +1,45 @@
+<section class="full_width">
+
+    <div class="content">
+        @if (project) {
+        <div class="content_left">
+            <h2>{{ project.name }}</h2>
+            <img [src]="'/assets/animation_img/project_details/blue_line.svg'">
+            <h3>Description</h3>
+            <p>{{ project.description }}</p>
+            <h3>Implementation Details</h3>
+            <p>{{ project.implemantationDetails }}</p>
+            <h4>Duration: <span>{{project.duration}}</span></h4>
+
+            <div class="content_left_lang">
+
+                @for (technology of project.technologies; track technology) {
+                
+                <p>{{ technology }}</p>
+                }
+
+            </div>
+
+        </div>
+
+        <div class="content_right">
+
+        </div>
+
+
+
+        <section class="project_detail">
+            <img [src]="project.imageUrl">
+
+
+
+            <div>
+                @for (tech of project.technologies; track tech) {
+                <span>{{ tech }}</span>
+                }
+            </div>
+        </section>
+        }
+    </div>
+
+</section>

@@ -1,0 +1,90 @@
+.full_width {
+    width: 100%;
+    height: 100dvh;
+    background-color: black;
+    background-image: url("/assets/img/backgrounds/project-details.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 120px;
+
+    &_left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:  flex-start;
+
+        h2 {
+            font-size: 56px;
+        }
+
+        h3 {
+            font-size: 32px;
+            padding-bottom: 16px;
+        }
+
+        h4 {
+            font-size: 20px;
+            padding-bottom: 16px;
+        }
+
+        span {
+            font-weight: 400;
+        }
+
+        p {
+            font-size: 24px;
+            padding-bottom: 24px;
+        }
+
+        img {
+            width: 320px;
+            animation: drawLine 6s infinite ease-in-out;
+            padding-bottom: 40px;
+        }
+
+        &_lang {
+            display: flex;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &_right {
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@keyframes drawLine {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    3% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    60% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    63% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    100% {
+        clip-path: inset(0 100% 0 0);
+    }
+}

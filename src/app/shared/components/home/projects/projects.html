@@ -19,7 +19,7 @@
                 </div>
 
                 <div class="project_content_grid_element_img_wrapper_button">
-                    <button class="btn_lets_talk" (click)="openProject(project.path)">
+                    <button class="btn_lets_talk" [routerLink]="['/projects', project.slug]">
                         Project details
                     </button>
                 </div>
