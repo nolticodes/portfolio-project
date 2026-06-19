@@ -33,7 +33,7 @@ export class ProjectDetail {
         },
       ],
       duration: '3 Weeks',
-      linkGithub: '',
+      linkGithub: 'https://github.com/nolticodes/',
       linkLiveTest: '',
     },
     {
@@ -57,7 +57,7 @@ export class ProjectDetail {
         },
       ],
       duration: '3 Weeks',
-      linkGithub: '',
+      linkGithub: 'https://github.com/nolticodes/game_jump_and_run_el_pollo_loco',
       linkLiveTest: '',
     },
     {
@@ -81,11 +81,11 @@ export class ProjectDetail {
         },
       ],
       duration: '3 Weeks',
-      linkGithub: '',
+      linkGithub: 'https://github.com/nolticodes/pokedex_app',
       linkLiveTest: '',
     }
   ];
-  
+
   project = this.projects[0];
 
   constructor() {
