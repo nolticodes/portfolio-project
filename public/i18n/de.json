@@ -36,7 +36,38 @@
             "comment_two": "Platzhalter",
             "comment_three": "Platzhalter"
         },
-
-        "projects": {}
+        "projects": {
+            "craft": "MEINE ARBEIT",
+            "projects": "Projekte",
+            "introduction": "Wirf einen Blick auf die Projekte, an denen ich gearbeitet habe, und die Fähigkeiten, die ich dabei eingesetzt habe. Jedes Projekt enthält eine kurze Übersicht, wichtige Informationen und die Möglichkeit, es genauer zu erkunden.",
+            "projectDetails": "Projektdetails",
+            "description": {
+                "join": "Beschreibung join",
+                "elPolloLoco": "Beschreibung elPolloLoco",
+                "pokemon": "Beschreibung pokemon"
+            }
+        },
+        "projectDetails": {
+            "back": "Go Back",
+            "description": "Description",
+            "implementation": "Implementation Details",
+            "duration": "Duration",
+            "next": "Next Project",
+            "join": {
+                "description": "decription join",
+                "implementation": "Implementation Details join",
+                "duration": "3 Weeks"
+            },
+            "pokemon": {
+                "description": "decription pokemon",
+                "implementation": "Implementation Details pokemon",
+                "duration": "3 Weeks"
+            },
+            "elPlloLoco": {
+                "description": "decription elPolloLoco",
+                "implementation": "Implementation Details elPolloLoco",
+                "duration": "3 Weeks"
+            }
+        }
     }
 }

@@ -41,6 +41,16 @@
             "comment_three": "placeholder"
         },
 
-        "projects": {}
+        "projects": {
+            "craft": "MY CRAFT",
+            "projects": "Projects",
+            "introduction": "Take a look at the projects I've worked on and the skills I've applied along the way. Each project includes a brief overview, key information, and the opportunity to explore it in more detail.",
+            "projectDetails": "Project details",
+            "description": {
+                "join": "description join",
+                "elPolloLoco": "description elPolloLoco",
+                "pokemon": "description pokemon"
+            }
+        }
     }
 }
