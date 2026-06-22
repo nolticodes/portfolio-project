@@ -1,7 +1,7 @@
 {
     "header": {
         "aboutMe": "Über Mich",
-        "skills": "Fähigkeiten",
+        "skills": "Stärken",
         "projects": "Projekte",
         "contact": "Kontakt"
     },
@@ -48,25 +48,25 @@
             }
         },
         "projectDetails": {
-            "back": "Go Back",
-            "description": "Description",
-            "implementation": "Implementation Details",
-            "duration": "Duration",
-            "next": "Next Project",
+            "back": "Zurück",
+            "description": "Beschreibung",
+            "implementation": "Implementierungsdetails",
+            "duration": "Dauer:",
+            "next": "Nächstes Projekt",
             "join": {
-                "description": "decription join",
-                "implementation": "Implementation Details join",
-                "duration": "3 Weeks"
+                "description": "Beschreibung Join",
+                "implementation": "Implementierungsdetails Join",
+                "duration": "3 Wochen"
             },
             "pokemon": {
-                "description": "decription pokemon",
-                "implementation": "Implementation Details pokemon",
-                "duration": "3 Weeks"
+                "description": "Beschreibung Pokémon",
+                "implementation": "Implementierungsdetails Pokémon",
+                "duration": "3 Wochen"
             },
-            "elPlloLoco": {
-                "description": "decription elPolloLoco",
-                "implementation": "Implementation Details elPolloLoco",
-                "duration": "3 Weeks"
+            "elPolloLoco": {
+                "description": "Beschreibung El Pollo Loco",
+                "implementation": "Implementierungsdetails El Pollo Loco",
+                "duration": "3 Wochen"
             }
         }
     }

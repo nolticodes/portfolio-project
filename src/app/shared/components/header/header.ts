@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -28,5 +29,11 @@ export class Header {
 
   toggleMenu() {
     this.isNavOpen = !this.isNavOpen;
+  }
+
+  router = inject(Router);
+
+  isProjectPage() {
+    return this.router.url.includes('/projects/');
   }
 }

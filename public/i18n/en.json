@@ -51,6 +51,28 @@
                 "elPolloLoco": "description elPolloLoco",
                 "pokemon": "description pokemon"
             }
+        },
+        "projectDetails": {
+            "back": "Go Back",
+            "description": "Description",
+            "implementation": "Implementation Details",
+            "duration": "Duration:",
+            "next": "Next Project",
+            "join": {
+                "description": "decription join",
+                "implementation": "Implementation Details join",
+                "duration": "3 Weeks"
+            },
+            "pokemon": {
+                "description": "decription pokemon",
+                "implementation": "Implementation Details pokemon",
+                "duration": "3 Weeks"
+            },
+            "elPolloLoco": {
+                "description": "decription elPolloLoco",
+                "implementation": "Implementation Details elPolloLoco",
+                "duration": "3 Weeks"
+            }
         }
     }
 }

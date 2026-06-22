@@ -309,3 +309,51 @@
         }
     }
 }
+
+.header__navbar_mobile {
+    position: relative;
+    z-index: 1000;
+}
+
+.container_burger_menu {
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-toggle {
+    position: relative;
+    z-index: 1002;
+}
+
+.burger_menu_selection {
+    z-index: 900;
+}
+
+.burger_menu_selection {
+    background-image: url(/assets/img/backgrounds/hero.png);
+    width: 100dvw;
+    height: 100dvh;
+    top: 0;
+    padding-top: 150px;
+}
+
+
+.project-header .nav_link--about {
+    color: black
+}
+
+.project-header .nav_link--skills {
+    color: black
+}
+
+.project-header .burger_menu_selection a {
+    color: white
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 850px) {
+    .header__navbar_mobile {
+        box-shadow: inset 0 160px 60px -80px rgba(0, 0, 0, 0.4);
+    }
+}

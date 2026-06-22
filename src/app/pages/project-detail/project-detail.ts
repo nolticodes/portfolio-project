@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-detail',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.scss',
 })
@@ -15,8 +16,9 @@ export class ProjectDetail {
     {
       name: 'Join',
       slug: 'join',
-      description: 'Task management app',
-      implemantationDetails: '...',
+      widthLine: '100px',
+      description: 'home.projectDetails.join.description',
+      implemantationDetails: 'home.projectDetails.join.implementation',
       imageUrl: '/assets/img/projects/Laptop.svg',
       technologies: [
         {
@@ -32,15 +34,16 @@ export class ProjectDetail {
           imageUrl: '/assets/icons/frontend_skills/CSS.svg',
         },
       ],
-      duration: '3 Weeks',
+      duration: 'home.projectDetails.join.duration',
       linkGithub: 'https://github.com/nolticodes/',
       linkLiveTest: '',
     },
     {
       name: 'El Pollo Loco',
       slug: 'el-pollo-loco',
-      description: 'Jump and run game',
-      implemantationDetails: '...',
+      widthLine: '320px',
+      description: 'home.projectDetails.elPolloLoco.description',
+      implemantationDetails: 'home.projectDetails.elPolloLoco.implementation',
       imageUrl: '/assets/img/projects/Pollo.svg',
       technologies: [
         {
@@ -56,15 +59,16 @@ export class ProjectDetail {
           imageUrl: '/assets/icons/frontend_skills/CSS.svg',
         },
       ],
-      duration: '3 Weeks',
+      duration: 'home.projectDetails.elPolloLoco.duration',
       linkGithub: 'https://github.com/nolticodes/game_jump_and_run_el_pollo_loco',
       linkLiveTest: '',
     },
     {
       name: 'Pokemon',
       slug: 'pokemon',
-      description: 'Jump and run game',
-      implemantationDetails: '...',
+      widthLine: '250px',
+      description: 'home.projectDetails.pokemon.description',
+      implemantationDetails: 'home.projectDetails.pokemon.implementation',
       imageUrl: '/assets/img/projects/Pollo.svg',
       technologies: [
         {
@@ -80,7 +84,7 @@ export class ProjectDetail {
           imageUrl: '/assets/icons/frontend_skills/CSS.svg',
         },
       ],
-      duration: '3 Weeks',
+      duration: 'home.projectDetails.pokemon.duration',
       linkGithub: 'https://github.com/nolticodes/pokedex_app',
       linkLiveTest: '',
     }
