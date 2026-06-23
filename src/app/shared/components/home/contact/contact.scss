@@ -52,7 +52,64 @@
     &_right {
         width: 50%;
         padding-left: 80px;
+        position: relative;
+
+        &_sticker {
+            position: relative;
+            width: 150px;
+            height: 150px;
+
+            img {
+                width: 150px;
+                height: 150px;
+            }
+
+            p {
+                position: absolute;
+                top: 0;
+                color: black;
+            }
+
+            &_logo {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 150px;
+                height: 150px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 80px;
+                    transform: rotate(13deg);
+                }
+            }
+        }
+        .sticker-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+
+            path {
+                fill: none; 
+                stroke: none;
+            }
+
+            text {
+                font-size: 9px; 
+                font-weight: 700;
+                letter-spacing: 0.73px;
+            }
+        }
     }
+}
+
+.content_right_sticker_container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 @keyframes drawLine {
@@ -75,4 +132,9 @@
     100% {
         clip-path: inset(0 100% 0 0);
     }
+}
+
+app-contact-form {
+    position: absolute;
+    top: 80px;
 }

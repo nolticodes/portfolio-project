@@ -1,3 +1,145 @@
-p {
+.contact_form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-size: 28px;
+        padding-bottom: 16px;
+    }
+
+    input {
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+        color: white;
+    }
+
+    &_policy {
+        padding: 16px 32px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        gap: 16px;
+        font-size: 18px;
+    }
+
+    a {
+        color: #3355FF;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    &_border {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 32px;
+        border-bottom: solid 1px #F7C518;
+
+        &:hover {
+            border-top: solid 1px #3355FF;
+            border-bottom: solid 1px #3355FF;
+
+            label {
+                color: #F87A55
+            }
+        }
+    }
+}
+
+.contact_form_policy {
+    display: flex;
+    align-items: flex-start;
+
+    input {
+        display: none;
+
+    }
+
+    &_checkbox {
+        position: relative;
+        min-width: 30px;
+        min-width: 30px;
+        height: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        overflow: hidden;
+        flex-shrink: 0;
+
+        &:hover {
+            background-color: rgba(51, 85, 255, 0.4);
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 24px;
+            min-height: 24px;
+            width: 24px;
+            height: 24px;
+            border: 2px solid #3355FF;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 24px;
+                height: 24px;
+                opacity: 0;
+                transition: opacity 200ms ease;
+            }
+        }
+
+        input:checked+.checkmark img {
+            opacity: 1;
+        }
+    }
+
+    p:hover {
+        a {
+            color: #F7C518;
+        }
+    }
+}
+
+.btn_section {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.btn_lets_talk {
+    width: 200px;
+    font-size: 20px;
+    padding: 8px 48px;
+    color: white;
+    background-color: transparent;
+    border-radius: 24px;
+    box-shadow: 3px 4px 0 white;
+    border: 1px solid white;
+    transition: transform 200ms ease;
+
+    &:hover {
+        transform: translate(3px, 4px);
+        box-shadow: 0 0 0 white;
+        background-color: #F87A55;
+        color: white;
+        cursor: pointer;
+    }
+
+    &:disabled {
+        pointer-events: none;
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+input::placeholder {
     color: white;
 }

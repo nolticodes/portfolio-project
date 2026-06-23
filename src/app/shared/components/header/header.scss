@@ -24,7 +24,7 @@
     }
 
     &_logo {
-        background-image: url('/assets/icons/logo/logo_blue.png');
+        background-image: url('/assets/icons/logo/logo_blue.svg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -34,7 +34,7 @@
 
     &_logo:hover {
         cursor: pointer;
-        background-image: url('/assets/icons/logo/logo_yellow.png');
+        background-image: url('/assets/icons/logo/logo_yellow.svg');
     }
 }
 

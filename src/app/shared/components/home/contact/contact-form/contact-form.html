@@ -1,13 +1,31 @@
-<form [formGroup]="userForm" (ngSubmit)="formSubmit()">
-    <label for="name">Name: </label>
-    <input id="name" type="text" formControlName="firstName" />
+<form class="contact_form" [formGroup]="userForm" (ngSubmit)="formSubmit()">
+    <div class="contact_form_border">
+        <label for="name">{{ 'home.contact.nameQuestion' | translate }}</label>
+        <input id="name" type="text" formControlName="firstName" placeholder="{{ 'home.contact.nameAnswer' | translate }}" />
+    </div>
 
-    <label for="mail">E-Mail: </label>
-    <input id="mail" type="text" formControlName="eMail" />
+    <div class="contact_form_border">
+        <label for="mail">{{ 'home.contact.emailQuestion' | translate }}</label>
+        <input id="mail" type="text" formControlName="eMail" placeholder="{{ 'home.contact.emailAnswer' | translate }}"/>
+    </div>
 
-    <button [disabled]="!userForm.valid" type="submit">submit</button>
-    <button (click)="formReset()">reset</button>
+
+    <div class="contact_form_border">
+        <label for="mail">{{ 'home.contact.messageQuestion' | translate }}</label>
+        <input id="mail" type="text" formControlName="message" placeholder="{{ 'home.contact.messageAnswer' | translate }}"/>
+    </div>
+
+    <div class="contact_form_policy">
+        <label class="contact_form_policy_checkbox">
+            <input id="checkbox" type="checkbox" formControlName="privacyPolicy">
+            <span class="checkmark">
+                <img src="assets/img/contact/check.svg">
+            </span>
+        </label>
+
+        <p for="checkbox"> <span>{{ 'home.contact.policyOne' | translate }}</span> <a href="#">privacy policy</a> <span>{{ 'home.contact.policyTwo' | translate }}</span> </p>
+    </div>
+    <div class="btn_section">
+        <button class="btn_lets_talk" type="submit" [disabled]="userForm.invalid" (click)="formReset()">{{ 'home.contact.send' | translate }}</button>
+    </div>
 </form>
-
-<p>{{userForm.valid}}</p>
-<p>{{email?.value}}</p>
