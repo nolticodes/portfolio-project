@@ -1,0 +1,13 @@
+<form [formGroup]="userForm" (ngSubmit)="formSubmit()">
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="firstName" />
+
+    <label for="mail">E-Mail: </label>
+    <input id="mail" type="text" formControlName="eMail" />
+
+    <button [disabled]="!userForm.valid" type="submit">submit</button>
+    <button (click)="formReset()">reset</button>
+</form>
+
+<p>{{userForm.valid}}</p>
+<p>{{email?.value}}</p>
