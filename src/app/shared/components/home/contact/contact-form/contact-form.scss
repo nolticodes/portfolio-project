@@ -113,6 +113,9 @@
     justify-content: flex-end;
 }
 
+.content_left_img {
+    display: none;
+}
 
 .btn_lets_talk {
     width: 200px;
@@ -142,4 +145,78 @@
 
 input::placeholder {
     color: white;
+}
+
+@keyframes drawLine {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    6% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    60% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    66% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    100% {
+        clip-path: inset(0 100% 0 0);
+    }
+}
+
+@media (max-width: 1250px) {
+    .content_left_img {
+        animation: drawLine 6s infinite ease-in-out;
+        display: block;
+    }
+
+    .btn_section {
+        justify-content: space-between;
+        gap: 24px
+    }
+}
+
+
+@media (max-width:600px) {
+    .content_left_img {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+
+    }
+}
+
+@media (max-width: 450px) {
+
+    .contact_form {
+        label {
+            font-size: 20px;
+        }
+
+        input {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        a {
+            font-size: 14px;
+        }
+    }
+
+    .btn_lets_talk {
+        width: 160px;
+        padding: 8px 24px;
+        font-size: 16px;
+    }
+
 }
