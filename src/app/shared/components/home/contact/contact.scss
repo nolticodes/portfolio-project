@@ -1,0 +1,73 @@
+.full_width {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/img/backgrounds/contact.png");
+    background-size: cover;
+}
+
+.content {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    padding: 180px 120px;
+    color: white;
+
+    &_left {
+        width: 50%;
+
+        h4 {
+            font-size: 20px;
+            font-weight: 400;
+            padding-bottom: 16px;
+        }
+
+        h2 {
+            font-size: 64px;
+            padding-bottom: 24px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            padding-bottom: 16px;
+        }
+
+        &_img {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                animation: drawLine 6s infinite ease-in-out;
+                padding-top: 32px;
+                width: 50%;
+            }
+        }
+
+    }
+}
+
+@keyframes drawLine {
+    0% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    6% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    60% {
+        clip-path: inset(0 0 0 0);
+    }
+
+    66% {
+        clip-path: inset(0 100% 0 0);
+    }
+
+    100% {
+        clip-path: inset(0 100% 0 0);
+    }
+}
