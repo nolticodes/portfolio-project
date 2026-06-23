@@ -79,13 +79,13 @@
     transition: opacity 300ms ease;
 
     &__default {
-        background-image: url('/assets/img/profile/profile.jpg');
+        background-image: url('/assets/img/profile/profile.jpeg');
         opacity: 1;
         z-index: 1;
     }
 
     &__hover {
-        background-image: url('/assets/img/profile/profile_grey.png');
+        background-image: url('/assets/img/profile/profile.jpeg');
         opacity: 0;
         z-index: 2;
     }

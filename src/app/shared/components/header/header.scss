@@ -22,6 +22,20 @@
         font-size: 18px;
         text-decoration: none;
     }
+
+    &_logo {
+        background-image: url('/assets/icons/logo/logo_blue.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 100%;
+        width: 80px;
+    }
+
+    &_logo:hover {
+        cursor: pointer;
+        background-image: url('/assets/icons/logo/logo_yellow.png');
+    }
 }
 
 .nav_link {
