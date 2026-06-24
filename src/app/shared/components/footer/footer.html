@@ -1,4 +1,4 @@
-<section class="full_width">
+<section class="full_width" [class.footer-dark]="isLegalNoticePage()">
 
     <div class="content">
 
@@ -7,7 +7,7 @@
 
             <p>© Denis Nolting 2026</p>
             <div class="content_element_container_legal">
-                <a href="#">Legal Notice</a>
+                <a routerLink="/legal-notice">{{'footer.legal' | translate}}</a>
                 <div class="content_element_container_legal_background"></div>
             </div>
         </div>
@@ -17,11 +17,10 @@
             <div class="content_element_container_legal_copy_mobile">
                 <p>© Denis Nolting 2026</p>
                 <div class="content_element_container_legal">
-                    <a href="#">Legal Notice</a>
+                    <a routerLink="/legal-notice">{{'footer.legal' | translate}}</a>
                     <div class="content_element_container_legal_background"></div>
                 </div>
             </div>
-
         </div>
 
 
@@ -30,8 +29,6 @@
             <div class="content_element_container_single_icon">
                 <img [src]="'/assets/icons/contact_icons/github.svg'">
             </div>
-
-
         </div>
 
         <div class="content_element_container_single">
@@ -42,7 +39,7 @@
         </div>
 
         <div class="content_element_container_single">
-            <a href="#HeroSectionID">Email</a>
+            <a href="mailto:denis.nolting@gmx.de">Email</a>
             <div class="content_element_container_single_icon">
                 <img [src]="'/assets/icons/contact_icons/mail.svg'">
             </div>
@@ -55,8 +52,6 @@
                 <div class="content_element_container_single_icon">
                     <img [src]="'/assets/icons/contact_icons/github.svg'">
                 </div>
-
-
             </div>
 
             <div class="content_element_container_single_mobile">
@@ -67,18 +62,11 @@
             </div>
 
             <div class="content_element_container_single_mobile">
-                <a href="#HeroSectionID">Email</a>
+                <a href="mailto:denis.nolting@gmx.de">Email</a>
                 <div class="content_element_container_single_icon">
                     <img [src]="'/assets/icons/contact_icons/mail.svg'">
                 </div>
             </div>
         </div>
-
     </div>
-
-
-
-
-
-
 </section>

@@ -5,6 +5,11 @@
         "projects": "Projekte",
         "contact": "Kontakt"
     },
+
+    "footer": {
+        "legal": "Impressum"
+    },
+
     "home": {
         "hero": {
             "helloWorld": "Hallo Welt",
@@ -81,6 +86,7 @@
             "emailAnswer": "deine@email.de",
             "messageQuestion": "Wie kann ich dir helfen?",
             "messageAnswer": "Hallo Denis, ich interessiere mich für ...",
+            "policy": "Datenschutzerklärung",
             "policyOne": "Ich habe die ",
             "policyTwo": " gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
             "send": "Senden"

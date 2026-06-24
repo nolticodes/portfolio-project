@@ -48,5 +48,8 @@ app-footer {
     app-footer {
         margin-top: -320px;
     }
-    
+}
+
+app-footer.footer-static {
+    margin-top: 0 !important;
 }
