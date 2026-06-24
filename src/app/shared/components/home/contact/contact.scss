@@ -12,7 +12,7 @@
 .content {
     width: 100%;
     max-width: 1920px;
-    padding: 180px 120px;
+    padding: 220px 120px;
     color: white;
     display: flex;
 
@@ -164,6 +164,7 @@ app-contact-form {
         &_right {
             width: 100%;
             padding: 0;
+            padding-bottom: 80px;
         }
 
         &_right_sticker_container {
@@ -199,7 +200,7 @@ app-contact-form {
 
 @media (max-width:1000px) {
     .content {
-        padding: 180px 24px;
+        padding: 220px 24px;
     }
 }
 
