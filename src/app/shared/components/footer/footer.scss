@@ -1,0 +1,89 @@
+* {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.full_width {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.content {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: green;
+    padding: 80px 120px;
+    padding-top: 0;
+
+    &_element_container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+
+        &_legal {
+            a {
+                position: relative;
+                z-index: 20;
+            }
+
+            a:hover+&_background {
+                clip-path: inset(0 0 0 0);
+            }
+
+            &_background {
+                pointer-events: none;
+                z-index: 1;
+                position: absolute;
+                top: 0;
+                left: 0px;
+                width: 100px;
+                height: 150px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: bottom;
+                background-image: url('/assets/animation_img/footer/line.svg');
+                clip-path: inset(0 100% 0 0);
+                transition:
+                    clip-path 200ms ease-out,
+            }
+        }
+
+        &_img {
+            background-image: url('/assets/icons/logo/logo_blue.svg');
+            height: 50px;
+            width: 100px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: left;
+            transition: background-image 240ms ease-in;
+
+            &:hover {
+                background-image: url('/assets/icons/logo/logo_yellow.svg');
+            }
+        }
+
+        &_single {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+}
