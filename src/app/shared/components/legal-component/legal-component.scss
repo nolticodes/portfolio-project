@@ -10,7 +10,17 @@
     max-width: 1920px;
     padding: 80px 120px;
 
-    p, h3 {
+    p {
         color: black
+    }
+
+    h3 {
+        color: #3355FF;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content {
+        padding: 80px 24px;
     }
 }

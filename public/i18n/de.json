@@ -91,5 +91,14 @@
             "policyTwo": " gelesen und stimme der darin beschriebenen Verarbeitung meiner Daten zu.",
             "send": "Senden"
         }
+    },
+
+    "legalNotice": {
+
+    },
+
+    "privacyPolicy": {
+        
     }
+ 
 }

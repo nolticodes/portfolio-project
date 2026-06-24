@@ -20,8 +20,7 @@ export class Footer {
   get isStaticPage() {
     return [
       '/legal-notice',
-      '/privacy-policy',
-      '/impressum'
+      '/privacy-policy'
     ].includes(this.router.url);
   }
 }

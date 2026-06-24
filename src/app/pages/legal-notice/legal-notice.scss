@@ -24,3 +24,9 @@
         color: white
     }
 }
+
+@media (max-width: 1000px) {
+    .content {
+        padding: 80px 24px;
+    }
+}
