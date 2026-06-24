@@ -16,6 +16,10 @@ export class Footer {
     return this.router.url === '/legal-notice';
   }
 
+  isPolicyPage() {
+    return this.router.url === '/privacy-policy';
+  }
+
   @HostBinding('class.footer-static')
   get isStaticPage() {
     return [
