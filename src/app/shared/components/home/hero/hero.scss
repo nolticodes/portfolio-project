@@ -57,6 +57,7 @@
 
     &_btn_hello {
         width: 100%;
+        max-width: 1440px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
@@ -81,14 +82,14 @@
         }
 
         &_img {
-            width: 180px;
+            width: 240px;
             display: flex;
             justify-content: flex-end;
 
             img {
                 width: 40px;
                 height: 40px;
-                transform: translateX(-40px);
+                transform: translateX(-80px);
                 animation: hoverEnd 300ms ease-out forwards;
             }
         }
@@ -125,6 +126,7 @@
                 span {
                     opacity: 0;
                 }
+
                 &::before {
                     clip-path: circle(150% at 50% 100%);
                 }
@@ -134,6 +136,7 @@
 
     &_btn_contact {
         width: 100%;
+        max-width: 1440px;
         display: flex;
         justify-content: flex-end;
 
@@ -236,11 +239,147 @@
     }
 }
 
+.content_container_btn_hello_text p {
+    transform-origin: left center;
+}
 
+.content_container_btn_hello_text:hover p {
+    animation: wobbleFrameGrow 900ms ease-out forwards;
+}
+
+
+.text_section__polaroid_sticker {
+    width: 240px;
+    transform: translate(320px, 240px) rotate(5deg);
+
+    &:hover {
+        .profile_img__default {
+            opacity: 0;
+        }
+
+        .profile_img__hover {
+            opacity: 1;
+        }
+    }
+
+    >img {
+        position: relative;
+        width: 100%;
+        display: block;
+        z-index: 2;
+    }
+
+    &__profile_img {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        z-index: 2;
+        width: 210px;
+        height: 220px;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+    }
+}
+
+.profile_img {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 300ms ease;
+
+    &__default {
+        background-image: url('/assets/img/profile/profile.jpeg');
+        opacity: 1;
+        z-index: 1;
+    }
+
+    &__hover {
+        background-image: url('/assets/img/profile/profile.jpeg');
+        opacity: 0;
+        z-index: 2;
+    }
+}
+
+.polaroid_text {
+    position: absolute;
+    bottom: 54px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+
+    span {
+        font-family: "Kalam", sans-serif;
+        font-size: 32px;
+    }
+
+
+    &__default,
+    &__hover {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        transition: opacity 300ms ease;
+    }
+
+    &__default {
+        opacity: 1;
+    }
+
+    &__hover {
+        opacity: 0;
+    }
+}
+
+.text_section__polaroid_sticker {
+    &:hover {
+        .profile_img__default {
+            opacity: 0;
+        }
+
+        .profile_img__hover {
+            opacity: 1;
+        }
+
+        .polaroid_text__default {
+            opacity: 0;
+        }
+
+        .polaroid_text__hover {
+            opacity: 1;
+        }
+    }
+}
+
+@keyframes wobbleFrameGrow {
+    0% {
+        transform: scaleX(1);
+    }
+
+    40% {
+        transform: scaleX(1.02);
+    }
+
+    70% {
+        transform: scaleX(0.99);
+    }
+
+    95% {
+        transform: scaleX(1.01);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
 
 @keyframes hoverStart {
     0% {
-        transform: translateX(-40px) rotate(-150deg);
+        transform: translateX(-80px) rotate(-150deg);
         opacity: 0;
     }
 
@@ -270,7 +409,75 @@
     }
 
     100% {
-        transform: translateX(-40px) rotate(-150deg);
+        transform: translateX(-80px) rotate(-150deg);
         opacity: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content {
+        padding: 80px 24px;
+        ;
+    }
+
+    .text_section__polaroid_sticker {
+        transform: translate(280px, 240px) rotate(5deg);
+    }
+}
+
+@media(max-width: 900px) {
+    .content_container_headline h1 {
+        font-size: 120px;
+    }
+
+    .text_section__polaroid_sticker {
+        transform: translate(240px, 240px) rotate(5deg);
+    }
+}
+
+@media (max-width: 850px) {
+    .content_container_contact {
+        display: none;
+    }
+
+    .content {
+        justify-content: flex-start;
+    }
+
+    .content_container {
+        height: 600px;
+        justify-content: flex-end;
+    }
+
+    .text_section__polaroid_sticker {
+        position: absolute;
+
+        top: 40%;
+        right: calc((100% + 240px) / 2);
+
+    }
+}
+
+@media (max-width: 700px) {
+    .content_container_headline h1 {
+        font-size: 90px;
+    }
+}
+
+@media (max-width: 550px) {
+    .content_container_headline h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 450px) {
+    .content_container_headline h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 380px) {
+    .content_container_headline h1 {
+        font-size: 40px;
     }
 }
