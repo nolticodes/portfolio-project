@@ -9,5 +9,17 @@ import { ChangeLetterHover } from '../../../directives/change-letter-hover';
   styleUrl: './hero.scss',
 })
 export class Hero {
+  defaultText = 'Hello World';
+  hoverText = "I'm Denis Nolting";
+  displayText = this.defaultText;
 
+  onMouseEnter() {
+    setTimeout(() => {
+      this.displayText = this.hoverText;
+    }, 200);
+  }
+
+  onMouseLeave() {
+    this.displayText = this.defaultText;
+  }
 }

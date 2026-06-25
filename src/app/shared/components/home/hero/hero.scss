@@ -26,7 +26,7 @@
 
     p {
         color: white;
-        font-size: 20px;
+        font-size: 24px;
     }
 }
 
@@ -58,7 +58,40 @@
     &_btn_hello {
         width: 100%;
         display: flex;
+        flex-direction: column-reverse;
         justify-content: flex-start;
+
+        &_text {
+            width: 200px;
+
+            text-align: center;
+            align-items: flex-start;
+            transition: width 200ms ease;
+
+            &:hover {
+                cursor: pointer;
+                width: 240px;
+            }
+
+            &:hover~.content_container_btn_hello_img img {
+                opacity: 1;
+                animation: hoverStart 900ms ease-out forwards;
+            }
+
+        }
+
+        &_img {
+            width: 180px;
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                width: 40px;
+                height: 40px;
+                transform: translateX(-40px);
+                animation: hoverEnd 300ms ease-out forwards;
+            }
+        }
 
         p {
             border: solid 1px white;
@@ -68,17 +101,30 @@
             overflow: hidden;
             z-index: 1;
 
+            span {
+                position: relative;
+                z-index: 2;
+                transition: opacity 200ms ease;
+            }
+
             &::before {
-                content: "";
+                content: "I'm Denis Nolting";
                 position: absolute;
                 inset: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: #3355FF;
                 clip-path: circle(0% at 50% 100%);
                 transition: clip-path 300ms ease;
-                z-index: -1;
+                z-index: 2;
             }
 
             &:hover {
+
+                span {
+                    opacity: 0;
+                }
                 &::before {
                     clip-path: circle(150% at 50% 100%);
                 }
@@ -91,9 +137,10 @@
         display: flex;
         justify-content: flex-end;
 
-        p {
-
+        a {
+            text-decoration: none;
             font-size: 24px;
+            color: white;
             padding: 8px 24px;
             border-radius: 24px;
             box-shadow: 3px 4px 0 white;
@@ -162,7 +209,6 @@
 
 .contact_icons {
 
-
     &__hover {
         display: inline-block;
         position: relative;
@@ -187,5 +233,44 @@
             z-index: 1;
             padding: 4px;
         }
+    }
+}
+
+
+
+@keyframes hoverStart {
+    0% {
+        transform: translateX(-40px) rotate(-150deg);
+        opacity: 0;
+    }
+
+    40% {
+        transform: translateX(5px) rotate(20deg);
+        opacity: 1;
+    }
+
+    70% {
+        transform: translateX(-3px) rotate(-10deg);
+    }
+
+    95% {
+        transform: translateX(1px) rotate(1deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+        ;
+    }
+}
+
+@keyframes hoverEnd {
+    0% {
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-40px) rotate(-150deg);
+        opacity: 0;
     }
 }

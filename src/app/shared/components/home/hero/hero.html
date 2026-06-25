@@ -3,20 +3,29 @@
     <div class="content">
         <div class="content_container">
             <div class="content_container_btn_hello">
-                <p>{{'home.hero.helloWorld' | translate}}</p>
+                <div class="content_container_btn_hello_text">
+                    <p >
+                        <span>Hello World</span>
+                    </p>
+                </div>
+                <div class="content_container_btn_hello_img">
+                    <img [src]="'./assets/icons/hero/waving_hand.svg'">
+                </div>
+
             </div>
             <div class="content_container_headline">
                 <h1 appChangeLetterHover>Frontend</h1>
                 <h1 appChangeLetterHover>{{'home.hero.dev' | translate}}</h1>
             </div>
             <div class="content_container_btn_contact">
-                <p>{{'home.hero.getInTouch' | translate}}</p>
+                <a href="#ContactSectionID">{{'home.hero.getInTouch' | translate}}</a>
             </div>
         </div>
 
         <div class="content_container_contact">
             <div class="content_container_contact_icon">
-                <a href="https://www.linkedin.com/in/denis-nolting/"><img [src]="'./assets/icons/contact_icons/linkedin.svg'"></a>
+                <a href="https://www.linkedin.com/in/denis-nolting/"><img
+                        [src]="'./assets/icons/contact_icons/linkedin.svg'"></a>
             </div>
             <div class="content_container_contact_icon">
                 <a href="https://github.com/nolticodes"><img [src]="'./assets/icons/contact_icons/github.svg'"></a>
