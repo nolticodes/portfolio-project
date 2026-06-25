@@ -19,6 +19,26 @@ export class Skills {
     { name: "REST-API", imgUrl: "./assets/icons/frontend_skills/Rest-Api.svg" },
     { name: "Angular", imgUrl: "./assets/icons/frontend_skills/Angular.svg" },
     { name: "TypeScript", imgUrl: "./assets/icons/frontend_skills/Ts.svg" },
+    { name: "Firebase", imgUrl: "./assets/icons/frontend_skills/Firebase.svg" },
+    { name: "MaterialDesign", imgUrl: "./assets/icons/frontend_skills/MaterialDesign.svg" },
+    { name: "React", imgUrl: "./assets/icons/frontend_skills/React.svg" },
+    { name: "Scrum", imgUrl: "./assets/icons/frontend_skills/Scrum.svg" },
+    { name: "Supabase", imgUrl: "./assets/icons/frontend_skills/Supabase.svg" },
+    { name: "Vue.Js", imgUrl: "./assets/icons/frontend_skills/Vue.Js.svg" },
+  ];
+
+    backendSkills = [
+    { name: "Cloud", imgUrl: "./assets/icons/backend_skills/Cloud.svg" },
+    { name: "Django", imgUrl: "./assets/icons/backend_skills/Django.svg" },
+    { name: "Docker", imgUrl: "./assets/icons/backend_skills/Docker.svg" },
+    { name: "Flask", imgUrl: "./assets/icons/backend_skills/Flask.svg" },
+    { name: "Heroku", imgUrl: "./assets/icons/backend_skills/Heroku.svg" },
+    { name: "Linux", imgUrl: "./assets/icons/backend_skills/Linux.svg" },
+    { name: "PostgreSQL", imgUrl: "./assets/icons/backend_skills/PostgreSQL.svg" },
+    { name: "Python", imgUrl: "./assets/icons/backend_skills/Python.svg" },
+    { name: "Redis", imgUrl: "./assets/icons/backend_skills/Redis.svg" },
+    { name: "RxJs", imgUrl: "./assets/icons/backend_skills/RxJs.svg" },
+    { name: "SQL", imgUrl: "./assets/icons/backend_skills/SQL.svg" },
   ];
 
   pullToPeelImages = [

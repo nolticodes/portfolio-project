@@ -12,8 +12,6 @@
 
         </div>
 
-
-
         <div class="skills_container_middle">
 
             <div class="skills_container_middle_ripped_paper">
@@ -23,9 +21,17 @@
                 </div>
             </div>
 
-
             <div class="skills_container_middle_skillicons">
                 @for (skill of frontendSkills; track skill.name) {
+                <div class="skill_container">
+                    <img [src]="skill.imgUrl">
+                    <p>{{skill.name}}</p>
+                </div>
+                }
+            </div>
+
+            <div class="skills_container_middle_skillicons">
+                @for (skill of backendSkills; track skill.name) {
                 <div class="skill_container">
                     <img [src]="skill.imgUrl">
                     <p>{{skill.name}}</p>

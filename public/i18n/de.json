@@ -1,15 +1,13 @@
 {
     "header": {
         "aboutMe": "Über Mich",
-        "skills": "Stärken",
+        "skills": "Skills",
         "projects": "Projekte",
         "contact": "Kontakt"
     },
-
     "footer": {
         "legal": "Impressum"
     },
-
     "home": {
         "hero": {
             "helloWorld": "Hallo Welt",
@@ -29,7 +27,7 @@
         },
         "skills": {
             "stack": "MEIN STACK",
-            "skillSet": "Fähigkeiten",
+            "skillSet": "Skill set",
             "text": "Die Arbeit mit modernen Frontend-Technologien hat mir eine starke Grundlage für die Entwicklung responsiver und benutzerfreundlicher Webanwendungen vermittelt. Ich lerne gerne neue Konzepte, verbessere kontinuierlich meine Problemlösungsfähigkeiten und entwickle mich stetig als Entwickler weiter. Ich bin stets offen für neue Technologien und erweitere derzeit mein Wissen im Bereich der Backend-Entwicklung."
         },
         "testimonials": {
@@ -48,8 +46,8 @@
             "projectDetails": "Projektdetails",
             "description": {
                 "join": "Beschreibung join",
-                "elPolloLoco": "Beschreibung elPolloLoco",
-                "pokemon": "Beschreibung pokemon"
+                "elPolloLoco": "Ein 2D-Jump-and-Run-Spiel, entwickelt mit JavaScript und HTML5 Canvas. Das Projekt umfasst objektorientierte Programmierung, Sprite-Animationen, Kollisionserkennung sowie einen spannenden Endgegner-Kampf.",
+                "pokemon": "Eine interaktive Pokédex-Anwendung, entwickelt mit JavaScript und der PokéAPI. Durchsuche, finde und entdecke Pokémon mithilfe dynamisch geladener Daten und einer responsiven Benutzeroberfläche."
             }
         },
         "projectDetails": {
@@ -64,13 +62,13 @@
                 "duration": "3 Wochen"
             },
             "pokemon": {
-                "description": "Beschreibung Pokémon",
-                "implementation": "Implementierungsdetails Pokémon",
+                "description": "Eine interaktive Pokédex-Anwendung, entwickelt mit JavaScript und der PokéAPI. Durchsuche, finde und entdecke Pokémon mithilfe dynamisch geladener Daten und einer responsiven Benutzeroberfläche.",
+                "implementation": "Während dieses Projekts integrierte ich eigenständig eine REST-API und entwickelte eine responsive Benutzeroberfläche. Dabei vertiefte ich meine Kenntnisse in JavaScript, asynchroner Datenverarbeitung und einer strukturierten Frontend-Entwicklung.",
                 "duration": "3 Wochen"
             },
             "elPolloLoco": {
-                "description": "Beschreibung El Pollo Loco",
-                "implementation": "Implementierungsdetails El Pollo Loco",
+                "description": "Ein 2D-Jump-and-Run-Spiel, entwickelt mit JavaScript und HTML5 Canvas. Das Projekt umfasst objektorientierte Programmierung, Sprite-Animationen, Kollisionserkennung sowie einen spannenden Endgegner-Kampf.",
+                "implementation": "Dieses Projekt entwickelte ich eigenständig mit Fokus auf objektorientierte Programmierung und interaktive Spiellogik. Dabei erweiterte ich meine Kenntnisse in Code-Architektur, Animationen und der Entwicklung komplexer JavaScript-Anwendungen.",
                 "duration": "3 Wochen"
             }
         },
@@ -92,13 +90,69 @@
             "send": "Senden"
         }
     },
-
     "legalNotice": {
-
+        "legal": "Impressum",
+        "information": "Angaben gemäß § 5 DDG",
+        "represented": "Vertreten durch",
+        "contact": "Kontakt",
+        "phone": "Telefon",
+        "email": "E-Mail",
+        "consumerDispute": "Verbraucherstreitbeilegung / Universalschlichtungsstelle",
+        "consumerDisputeText": "Wir nehmen nicht an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teil und sind dazu auch nicht verpflichtet.",
+        "privacy": "Datenschutzerklärung",
+        "privacyText": "Unter dem folgenden Link finden Sie unsere",
+        "privacyLink": "Datenschutzerklärung",
+        "generatorText": "Impressum von",
+        "poweredBy": "Powered by"
     },
-
     "privacyPolicy": {
-        
+        "privacy": "Datenschutzerklärung",
+        "responsible": "1. Verantwortlicher",
+        "responsibleText": "Verantwortlich für die Datenverarbeitung auf dieser Website ist:",
+        "email": "E-Mail",
+        "general": "2. Allgemeine Hinweise",
+        "generalTextOne": "Der Schutz Ihrer persönlichen Daten ist mir ein wichtiges Anliegen. Ich behandle Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
+        "generalTextTwo": "Die Nutzung dieser Website ist grundsätzlich ohne Angabe personenbezogener Daten möglich. Soweit auf dieser Website personenbezogene Daten erhoben werden, erfolgt dies stets auf freiwilliger Basis.",
+        "hosting": "3. Hosting",
+        "hostingTextOne": "Diese Website wird bei Netcup gehostet.",
+        "hostingTextTwo": "Beim Besuch der Website werden durch den Hosting-Anbieter automatisch Informationen in sogenannten Server-Logfiles erfasst. Dies sind insbesondere:",
+        "ip": "IP-Adresse des Besuchers",
+        "date": "Datum und Uhrzeit des Zugriffs",
+        "page": "aufgerufene Seite bzw. Datei",
+        "data": "übertragene Datenmenge",
+        "browser": "Browsertyp und Browserversion",
+        "os": "verwendetes Betriebssystem",
+        "referrer": "Referrer-URL",
+        "hostingTextThree": "Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Es besteht ein berechtigtes Interesse an der technisch fehlerfreien Bereitstellung und Sicherheit der Website.",
+        "contactForm": "4. Kontaktformular",
+        "contactFormTextOne": "Wenn Sie mir über das Kontaktformular eine Nachricht senden, werden die von Ihnen eingegebenen Daten verarbeitet, um Ihre Anfrage zu bearbeiten.",
+        "contactFormTextTwo": "Hierzu können insbesondere folgende Daten gehören:",
+        "name": "Name",
+        "message": "Inhalt der Nachricht",
+        "contactFormTextThree": "Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Anbahnung oder Durchführung eines Vertrags zusammenhängt, oder auf Grundlage meines berechtigten Interesses an der Bearbeitung Ihrer Anfrage gemäß Art. 6 Abs. 1 lit. f DSGVO.",
+        "contactFormTextFour": "Die über das Kontaktformular übermittelten Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben.",
+        "mail": "5. E-Mail-Kontakt",
+        "mailTextOne": "Wenn Sie mich per E-Mail kontaktieren, werden die von Ihnen übermittelten personenbezogenen Daten ausschließlich zur Bearbeitung Ihrer Anfrage gespeichert und verarbeitet.",
+        "mailTextTwo": "Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO.",
+        "fonts": "6. Lokale Schriftarten",
+        "fontsText": "Auf dieser Website werden Schriftarten lokal eingebunden. Eine Verbindung zu Servern von Google oder anderen externen Anbietern findet hierbei nicht statt.",
+        "links": "7. Externe Links",
+        "linksTextOne": "Diese Website enthält Links zu externen Webseiten, insbesondere zu LinkedIn und GitHub.",
+        "linksTextTwo": "Beim Anklicken dieser Links verlassen Sie meine Website. Für die Inhalte und Datenschutzpraktiken der jeweiligen Anbieter bin ich nicht verantwortlich.",
+        "cookies": "8. Cookies und Tracking",
+        "cookiesTextOne": "Auf dieser Website werden keine Analyse- oder Tracking-Tools eingesetzt.",
+        "cookiesTextTwo": "Es werden keine Cookies zu Marketing-, Analyse- oder Profiling-Zwecken verwendet.",
+        "rights": "9. Ihre Rechte",
+        "rightsText": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf:",
+        "rightInformation": "Auskunft über Ihre gespeicherten personenbezogenen Daten",
+        "rightCorrection": "Berichtigung unrichtiger Daten",
+        "rightDeletion": "Löschung Ihrer Daten",
+        "rightRestriction": "Einschränkung der Verarbeitung",
+        "rightObjection": "Widerspruch gegen die Verarbeitung",
+        "rightTransfer": "Datenübertragbarkeit",
+        "rightsTextTwo": "Darüber hinaus haben Sie das Recht, sich bei einer Datenschutzaufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten zu beschweren.",
+        "updates": "10. Aktualität und Änderungen dieser Datenschutzerklärung",
+        "updatesTextOne": "Diese Datenschutzerklärung hat den Stand Juni 2026.",
+        "updatesTextTwo": "Ich behalte mir vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen meiner Website umzusetzen."
     }
- 
 }

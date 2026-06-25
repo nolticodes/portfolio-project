@@ -22,14 +22,14 @@ export class Projects {
     name: "El Pollo Loco",
     slug: "el-pollo-loco",
     description: "home.projects.description.elPolloLoco",
-    imageUrl: "/assets/img/projects/Pollo.svg",
+    imageUrl: "/assets/img/projects/pollo.png",
     path: "https://www.google.com/",
   },
   {
-    name: "Pokemon",
+    name: "Pokedex",
     slug: "pokemon",
     description: "home.projects.description.pokemon",
-    imageUrl: "/assets/img/projects/Pollo.svg",
+    imageUrl: "/assets/img/projects/pokedex.png",
     path: "https://www.google.com/"
   },
 ];

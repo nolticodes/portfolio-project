@@ -8,6 +8,7 @@
 .content {
     width: 100%;
     max-width: 1920px;
+    min-height: calc(100dvh - 520px);
     padding: 80px 120px;
 
     p {
@@ -19,8 +20,20 @@
     }
 }
 
+@media(max-width: 1250px) {
+    .content {
+        min-height: calc(100dvh - 600px);
+    };
+}
+
 @media (max-width: 1000px) {
     .content {
         padding: 80px 24px;
+    }
+}
+
+@media (max-width: 650px) {
+    .content {
+        min-height: calc(100dvh - 620px);
     }
 }

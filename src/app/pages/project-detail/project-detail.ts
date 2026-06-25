@@ -23,7 +23,7 @@ export class ProjectDetail {
       technologies: [
         {
           name: 'Angular',
-          imageUrl: '',
+          imageUrl: '/assets/icons/frontend_skills/Angular.svg',
         },
         {
           name: 'TypeScript',
@@ -44,19 +44,19 @@ export class ProjectDetail {
       widthLine: '320px',
       description: 'home.projectDetails.elPolloLoco.description',
       implemantationDetails: 'home.projectDetails.elPolloLoco.implementation',
-      imageUrl: '/assets/img/projects/Pollo.svg',
+      imageUrl: '/assets/img/projects/pollo.png',
       technologies: [
         {
-          name: 'Angular',
-          imageUrl: '/assets/icons/frontend_skills/Angular.svg',
+          name: 'HTML',
+          imageUrl: '/assets/icons/frontend_skills/HTML.svg',
         },
         {
-          name: 'TypeScript',
-          imageUrl: '/assets/icons/frontend_skills/Ts.svg',
-        },
-        {
-          name: 'SCSS',
+          name: 'CSS',
           imageUrl: '/assets/icons/frontend_skills/CSS.svg',
+        },
+        {
+          name: 'JavaScript',
+          imageUrl: '/assets/icons/frontend_skills/Js.svg',
         },
       ],
       duration: 'home.projectDetails.elPolloLoco.duration',
@@ -64,24 +64,28 @@ export class ProjectDetail {
       linkLiveTest: '',
     },
     {
-      name: 'Pokemon',
+      name: 'Pokedex',
       slug: 'pokemon',
       widthLine: '250px',
       description: 'home.projectDetails.pokemon.description',
       implemantationDetails: 'home.projectDetails.pokemon.implementation',
-      imageUrl: '/assets/img/projects/Pollo.svg',
+      imageUrl: '/assets/img/projects/pokedex.png',
       technologies: [
         {
-          name: 'Angular',
-          imageUrl: '',
+          name: 'HTML',
+          imageUrl: '/assets/icons/frontend_skills/HTML.svg',
         },
         {
-          name: 'TypeScript',
-          imageUrl: '/assets/icons/frontend_skills/Ts.svg',
-        },
-        {
-          name: 'SCSS',
+          name: 'CSS',
           imageUrl: '/assets/icons/frontend_skills/CSS.svg',
+        },
+        {
+          name: 'REST-API',
+          imageUrl: '/assets/icons/frontend_skills/Rest-Api.svg',
+        },
+        {
+          name: 'JavaScript',
+          imageUrl: '/assets/icons/frontend_skills/Js.svg',
         },
       ],
       duration: 'home.projectDetails.pokemon.duration',

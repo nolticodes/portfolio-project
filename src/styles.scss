@@ -20,6 +20,11 @@ body {
     box-sizing: border-box;
 }
 
+body.no-scroll {
+  overflow: hidden;
+  height: 100dvh;
+}
+
 app-header {
     position: absolute;
     top: 0;

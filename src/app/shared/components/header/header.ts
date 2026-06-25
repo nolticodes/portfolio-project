@@ -29,6 +29,17 @@ export class Header {
 
   toggleMenu() {
     this.isNavOpen = !this.isNavOpen;
+
+    if (this.isNavOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }
+
+  closeMenu() {
+    this.isNavOpen = false;
+    document.body.classList.remove('no-scroll');
   }
 
   router = inject(Router);

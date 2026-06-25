@@ -23,7 +23,8 @@
     </nav>
 
     <nav class="header__navbar header__navbar_mobile">
-        <img [src]="'/assets/icons/placeholder/Vector.png'">
+        <div class="header__navbar_logo" routerLink="">
+        </div>
 
         <div class="container_burger_menu" [class.nav-open]="isNavOpen">
             <button class="menu-toggle" type="button" (click)="toggleMenu()">
@@ -37,10 +38,10 @@
 
     <div class="burger_menu_selection" [class.burger_menu_selection__visible]="isNavOpen">
 
-        <a href="#AboutMeSectionID" class="nav_link nav_link--about">{{ 'header.aboutMe' | translate }}</a>
-        <a href="#SkillsSectionID"  class="nav_link nav_link--skills">{{ 'header.skills' | translate }}</a>
-        <a href="#ProjectsSectionID" class="nav_link nav_link--projects">{{ 'header.projects' | translate }}</a>
-        <a href="#ContactSectionID" class="nav_link nav_link--contact">{{ 'header.contact' | translate }}</a>
+        <a href="#AboutMeSectionID" class="nav_link nav_link--about" (click)="closeMenu()">{{ 'header.aboutMe' | translate }}</a>
+        <a href="#SkillsSectionID"  class="nav_link nav_link--skills" (click)="closeMenu()">{{ 'header.skills' | translate }}</a>
+        <a href="#ProjectsSectionID" class="nav_link nav_link--projects" (click)="closeMenu()">{{ 'header.projects' | translate }}</a>
+        <a href="#ContactSectionID" class="nav_link nav_link--contact" (click)="closeMenu()">{{ 'header.contact' | translate }}</a>
 
         <section class="language_toggle_section">
             <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)" (click)="useLanguage('en')">
@@ -56,15 +57,16 @@
             </p>
         </section>
 
-        <div class="contact_icons">
-            <div class="contact_icons__hover">
-                <img [src]="'./assets/icons/contact_icons/Linkedin.png'">
+        <div class="content_container_contact">
+            <div class="content_container_contact_icon">
+                <a href="https://www.linkedin.com/in/denis-nolting/" (click)="closeMenu()"><img
+                        [src]="'./assets/icons/contact_icons/linkedin.svg'"></a>
             </div>
-            <div class="contact_icons__hover">
-                <img [src]="'./assets/icons/contact_icons/Github.png'">
+            <div class="content_container_contact_icon">
+                <a href="https://github.com/nolticodes" (click)="closeMenu()"><img [src]="'./assets/icons/contact_icons/github.svg'"></a>
             </div>
-            <div class="contact_icons__hover">
-                <img [src]="'./assets/icons/contact_icons/Mail.png'">
+            <div class="content_container_contact_icon">
+                <a href="mailto:denis.nolting@gmx.de" (click)="closeMenu()"><img [src]="'./assets/icons/contact_icons/mail.svg'"></a>
             </div>
         </div>
 
