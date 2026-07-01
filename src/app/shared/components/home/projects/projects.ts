@@ -15,21 +15,21 @@ export class Projects {
     name: "Join",
     slug: "join",
     description: "home.projects.description.join",
-    imageUrl: "/assets/img/projects/Laptop.svg",
+    imageUrl: "./assets/img/projects/Laptop.svg",
     path: "https://www.google.com/"
   },
   {
     name: "El Pollo Loco",
     slug: "el-pollo-loco",
     description: "home.projects.description.elPolloLoco",
-    imageUrl: "/assets/img/projects/pollo.png",
+    imageUrl: "./assets/img/projects/pollo.png",
     path: "https://www.google.com/",
   },
   {
     name: "Pokedex",
     slug: "pokemon",
     description: "home.projects.description.pokemon",
-    imageUrl: "/assets/img/projects/pokedex.png",
+    imageUrl: "./assets/img/projects/pokedex.png",
     path: "https://www.google.com/"
   },
 ];
