@@ -1,54 +1,56 @@
-<section id="AboutMeSectionID" class="about_me_section">
+<div class="max_width">
+    <section id="AboutMeSectionID" class="about_me_section">
 
-    <div class="ripped_papers">
-        <div class="ripped_paper_container location">
-            <img [src]="'./assets/stickers/about_me/1.png'">
-            <div class="ripped_paper_text">
-                <img [src]="'./assets/icons/aboutme/location.png'">
-                <p>{{'home.aboutMe.based' | translate}}</p>
+        <div class="ripped_papers">
+            <div class="ripped_paper_container location">
+                <img [src]="'./assets/stickers/about_me/1.png'">
+                <div class="ripped_paper_text">
+                    <img [src]="'./assets/icons/aboutme/location.png'">
+                    <p>{{'home.aboutMe.based' | translate}}</p>
+                </div>
             </div>
-        </div>
 
-        <div class="ripped_paper_container relocation">
-            <img [src]="'./assets/stickers/about_me/2.png'">
-            <div class="ripped_paper_text">
-                <img [src]="'./assets/icons/aboutme/relocation.png'">
-                <p>{{'home.aboutMe.relocate' | translate}}</p>
+            <div class="ripped_paper_container relocation">
+                <img [src]="'./assets/stickers/about_me/2.png'">
+                <div class="ripped_paper_text">
+                    <img [src]="'./assets/icons/aboutme/team.svg'">
+                    <p>{{'home.aboutMe.relocate' | translate}}</p>
+                </div>
             </div>
-        </div>
 
-        <div class="ripped_paper_container remote">
-            <img [src]="'./assets/stickers/about_me/3.png'">
-            <div class="ripped_paper_text">
-                <img [src]="'./assets/icons/aboutme/remote.png'">
-                <p>{{'home.aboutMe.remote' | translate}}</p>
+            <div class="ripped_paper_container remote">
+                <img [src]="'./assets/stickers/about_me/3.png'">
+                <div class="ripped_paper_text">
+                    <img [src]="'./assets/icons/aboutme/remote.png'">
+                    <p>{{'home.aboutMe.remote' | translate}}</p>
+                </div>
             </div>
+
         </div>
 
-    </div>
+        <div class="about_me_text_section">
+            <div class="about_me_text_section__question">
+                <p>{{'home.aboutMe.who' | translate}}</p>
+            </div>
 
-    <div class="about_me_text_section">
-        <div class="about_me_text_section__question">
-            <p>{{'home.aboutMe.who' | translate}}</p>
+            <div class="about_me_text_section__headline">
+                <h2>{{'home.aboutMe.about' | translate}}</h2>
+                <img [src]="'./assets/animation_img/about_me/Color option 3.png'">
+            </div>
+
+            <div class="about_me_text_section__text">
+                <p>{{'home.aboutMe.introduction_one' | translate}}</p>
+                <p>{{'home.aboutMe.introduction_two' | translate}}</p>
+            </div>
+
+            <div class="about_me_text_section__button">
+                <a class="btn_lets_talk" href="#ContactSectionID">
+                    {{'home.aboutMe.talk' | translate}}
+                </a>
+            </div>
+
+
         </div>
 
-        <div class="about_me_text_section__headline">
-            <h2>{{'home.aboutMe.about' | translate}}</h2>
-            <img [src]="'./assets/animation_img/about_me/Color option 3.png'">
-        </div>
-
-        <div class="about_me_text_section__text">
-            <p>{{'home.aboutMe.introduction_one' | translate}}</p>
-            <p>{{'home.aboutMe.introduction_two' | translate}}</p>
-        </div>
-
-        <div class="about_me_text_section__button">
-            <button class="btn_lets_talk">
-                {{'home.aboutMe.talk' | translate}}
-            </button>
-        </div>
-
-
-    </div>
-
-</section>
+    </section>
+</div>

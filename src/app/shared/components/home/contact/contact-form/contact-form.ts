@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
+import { RouterLink } from "@angular/router";
 
 
 export function forbiddenEmailValidator(): ValidatorFn {
@@ -33,7 +34,7 @@ export function forbiddenMessageValidator(): ValidatorFn {
 
 @Component({
   selector: 'app-contact-form',
-  imports: [ReactiveFormsModule, TranslatePipe],
+  imports: [ReactiveFormsModule, TranslatePipe, RouterLink],
   templateUrl: './contact-form.html',
   styleUrl: './contact-form.scss',
 })

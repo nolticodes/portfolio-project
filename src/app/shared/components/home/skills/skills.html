@@ -30,14 +30,6 @@
                 }
             </div>
 
-            <div class="skills_container_middle_skillicons">
-                @for (skill of backendSkills; track skill.name) {
-                <div class="skill_container">
-                    <img [src]="skill.imgUrl">
-                    <p>{{skill.name}}</p>
-                </div>
-                }
-            </div>
         </div>
 
         <div class="skills_container_right">
@@ -46,7 +38,7 @@
 
             @if(currentStickerIndex === 2) {
             <div class="skills_container_right_sticker_text_overlay" (click)="changeStickerImage()">
-                <p>I'm learning more every day! <br> Next up: <br> backend development skills</p>
+                <p>I'm also interested in developing my own AI projects</p>
             </div>
             }
 
