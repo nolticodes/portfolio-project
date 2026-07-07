@@ -17,6 +17,7 @@
     align-items: center;
 
     a {
+        mix-blend-mode: difference;
         color: white;
         font-weight: bold;
         font-size: 18px;
@@ -404,7 +405,11 @@
     color: white
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1250px) {
+    .header__navbar a {
+        color: black
+    }
+}
 
 @media (max-width: 850px) {
     .header__navbar_mobile {

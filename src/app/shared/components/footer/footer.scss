@@ -1,17 +1,11 @@
 * {
-    color: white;
     font-size: 18px;
     font-weight: 500;
 
-    a {
+    a, p {
         text-decoration: none;
-    }
-}
-
-.full_width.footer-dark {
-    a,
-    p {
-        color: black;
+        mix-blend-mode: difference;
+        color: white;
     }
 }
 
@@ -113,7 +107,7 @@
                     clip-path: circle(150% at 50% 100%);
                 }
 
-                &:hover+.content_element_container_single_icon img{
+                &:hover+.content_element_container_single_icon img {
                     opacity: 1;
                     animation: hoverStart 900ms ease-out forwards;
                 }
@@ -132,7 +126,7 @@
                     height: 24px;
                     transform: translateX(-40px);
                     animation: hoverEnd 300ms ease-out forwards;
-                    
+
                 }
             }
 
@@ -160,7 +154,8 @@
     }
 
     100% {
-        transform: translateX(0) rotate(0deg);;
+        transform: translateX(0) rotate(0deg);
+        ;
     }
 }
 
@@ -188,7 +183,7 @@
     .full_width {
         height: 300px;
     }
-    
+
     .content {
         padding: 80px 120px;
     }
@@ -202,7 +197,7 @@
 
 @media (max-width: 650px) {
 
-    *{
+    * {
         font-size: 16px;
     }
 
@@ -231,7 +226,7 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-between;
-        padding:  24px 0px;
+        padding: 24px 0px;
     }
 
     .content_element_container_single {
@@ -250,32 +245,32 @@
         flex-direction: column-reverse;
 
         a {
-                position: relative;
-                overflow: hidden;
-                padding: 8px 16px;
+            position: relative;
+            overflow: hidden;
+            padding: 8px 16px;
+            border-radius: 24px;
+            z-index: 10;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background-color: #3355FF;
                 border-radius: 24px;
-                z-index: 10;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    inset: 0;
-                    background-color: #3355FF;
-                    border-radius: 24px;
-                    clip-path: circle(0% at 50% 100%);
-                    transition: clip-path 300ms ease;
-                    z-index: -1;
-                }
-
-                &:hover::before {
-                    clip-path: circle(150% at 50% 100%);
-                }
-
-                &:hover+.content_element_container_single_icon img{
-                    opacity: 1;
-                    animation: hoverStart 900ms ease-out forwards;
-                }
+                clip-path: circle(0% at 50% 100%);
+                transition: clip-path 300ms ease;
+                z-index: -1;
             }
+
+            &:hover::before {
+                clip-path: circle(150% at 50% 100%);
+            }
+
+            &:hover+.content_element_container_single_icon img {
+                opacity: 1;
+                animation: hoverStart 900ms ease-out forwards;
+            }
+        }
     }
 
 
