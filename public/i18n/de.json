@@ -21,14 +21,14 @@
             "based": "Wohnhaft in Hamburg",
             "relocate": "Starker Team Player",
             "remote": "Offen für Remote-Arbeit",
-            "introduction_one": "Hallo, ich bin Denis. Ich befinde mich in der Ausbildung zum Fullstack Developer und habe eine Leidenschaft für die Entwicklung interaktiver Webanwendungen sowie das Erlernen neuer Technologien. Ich stelle mich gerne Herausforderungen, finde elegante Lösungen und wachse mit jedem Projekt, das ich umsetze. Für mich ist Programmieren eine kontinuierliche Reise des Lernens und der Weiterentwicklung.",
+            "introduction_one": "Hallo, ich bin Denis. Ich bin Fullstack Developer mit einer Leidenschaft für die Entwicklung moderner, interaktiver Webanwendungen und den Einsatz neuer Technologien. Ich stelle mich gerne anspruchsvollen Herausforderungen, finde durchdachte Lösungen und lege großen Wert auf sauberen, wartbaren Code. Mit jedem Projekt erweitere ich meine Fähigkeiten und sammle praktische Erfahrungen. Für mich ist Softwareentwicklung ein kontinuierlicher Prozess des Lernens, der Weiterentwicklung und der Umsetzung innovativer Ideen.",
             "introduction_two": "Lass uns zusammenarbeiten und gemeinsam etwas Besonderes erschaffen!",
             "talk": "Lass uns sprechen"
         },
         "skills": {
             "stack": "MEIN STACK",
             "skillSet": "Skill set",
-            "text": "Die Arbeit mit modernen Frontend-Technologien hat mir eine starke Grundlage für die Entwicklung responsiver und benutzerfreundlicher Webanwendungen vermittelt. Ich lerne gerne neue Konzepte, verbessere kontinuierlich meine Problemlösungsfähigkeiten und entwickle mich stetig als Entwickler weiter. Ich bin stets offen für neue Technologien und erweitere derzeit mein Wissen im Bereich der Backend-Entwicklung."
+            "text": "Als Fullstack Developer entwickle ich moderne Webanwendungen mit Fokus auf Qualität, Benutzerfreundlichkeit und sauberem Code. Ich arbeite mich schnell in neue Technologien ein, löse komplexe Herausforderungen mit Freude und lege großen Wert auf durchdachte, nachhaltige Lösungen. Kontinuierliches Lernen und die stetige Weiterentwicklung meiner Fähigkeiten sind für mich ein fester Bestandteil meiner Arbeit."
         },
         "testimonials": {
             "words": "DAS SAGEN ANDERE:",
@@ -75,8 +75,8 @@
         "contact": {
             "contactMe": "KONTAKT",
             "workTogether": "Bereit, gemeinsam zu arbeiten?",
-            "contactTextOne": "Auf der Suche nach einem Frontend- oder Junior-Fullstack-Entwickler?",
-            "contactTextTwo": "Ich absolviere derzeit eine Weiterbildung zum Fullstack Developer und arbeite aktiv an praxisnahen Projekten, um meine Fähigkeiten weiter auszubauen. Es macht mir Freude, Ideen in interaktive Webanwendungen umzusetzen, neue Technologien zu erlernen und an sinnvollen Produkten mitzuwirken.",
+            "contactTextOne": "Auf der Suche nach einem Fullstack-Entwickler?",
+            "contactTextTwo": "Als Fullstack Developer setze ich Ideen in moderne und leistungsfähige Webanwendungen um. Ich arbeite gerne an praxisnahen Projekten, entwickle mich kontinuierlich weiter und begeistere mich dafür, neue Technologien einzusetzen, um durchdachte und nutzerorientierte Lösungen zu schaffen.",
             "contactTextThree": "Lass uns vernetzen und gemeinsam etwas Großartiges schaffen.",
             "nameQuestion": "Wie heißt du?",
             "nameAnswer": "Dein Name",

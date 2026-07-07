@@ -21,14 +21,14 @@
             "based": "Based in Hamburg",
             "relocate": "Strong team player",
             "remote": "Open to work remote",
-            "introduction_one": "Hey there, I'm Denis. I'm a Fullstack Developer in training with a passion for creating interactive web applications and learning new technologies. I enjoy tackling challenges, finding elegant solutions, and growing with every project I build. For me, coding is a continuous journey of learning and improvement.",
+            "introduction_one": "Hey, I'm Denis. I'm a Fullstack Developer with a passion for building modern, interactive web applications and working with new technologies. I enjoy taking on challenging problems, finding thoughtful solutions, and writing clean, maintainable code. Every project helps me expand my skills and gain hands-on experience. For me, software development is a continuous journey of learning, growth, and turning ideas into meaningful digital experiences.",
             "introduction_two": "Let's collaborate and build something remarkable together!",
             "talk": "Let's talk"
         },
         "skills": {
             "stack": "MY STACK",
             "skillSet": "Skill set",
-            "text": "Working with modern frontend technologies has given me a strong foundation in building responsive and user-friendly web applications. I enjoy learning new concepts, improving my problem-solving skills, and continuously growing as a developer. I'm always open to new technologies and currently expanding my expertise into backend development."
+            "text": "As a Fullstack Developer, I build modern web applications with a strong focus on quality, usability, and clean code. I enjoy learning new technologies, solving complex challenges, and creating thoughtful, maintainable solutions. Continuous learning and professional growth are an essential part of my work and drive me to improve with every project."
         },
         "testimonials": {
             "words": "IN THEIR WORDS:",
@@ -75,8 +75,8 @@
         "contact": {
             "contactMe": "CONTACT ME",
             "workTogether": "Ready to work together?",
-            "contactTextOne": "Looking for a Frontend or Junior Fullstack Developer?",
-            "contactTextTwo": "I'm currently completing a Fullstack Developer program and actively building real-world projects to strengthen my skills. I enjoy turning ideas into interactive web applications, learning new technologies, and contributing to meaningful products.",
+            "contactTextOne": "Looking for a Fullstack Developer?",
+            "contactTextTwo": "As a Fullstack Developer, I enjoy turning ideas into modern and high-performing web applications. I like working on real-world projects, continuously expanding my skill set, and using new technologies to create thoughtful, user-focused solutions.",
             "contactTextThree": "Let's connect and create something great together.",
             "nameQuestion": "What's your name?",
             "nameAnswer": "Your name goes here",
