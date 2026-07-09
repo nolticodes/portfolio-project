@@ -43,8 +43,8 @@ export class Skills {
 
   pullToPeelImages = [
     './assets/stickers/skills/pull_to_peel/p2p_1.svg',
-    './assets/stickers/skills/pull_to_peel/p2p_2.svg',
-    './assets/stickers/skills/pull_to_peel/p2p_3.png',
+    './assets/stickers/skills/pull_to_peel/p2p_02.png',
+    './assets/stickers/skills/pull_to_peel/p2p_03.png',
   ];
 
   currentStickerIndex = 0;
