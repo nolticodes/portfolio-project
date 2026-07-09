@@ -2,13 +2,25 @@
     <nav class="header__navbar">
         <div class="header__navbar_logo" routerLink="">
         </div>
-        
-        <a href="#AboutMeSectionID" class="nav_link nav_link--about">{{ 'header.aboutMe' | translate }}</a>
-        <a href="#SkillsSectionID" class="nav_link nav_link--skills">{{ 'header.skills' | translate }}</a>
-        <a href="#ProjectsSectionID" class="nav_link nav_link--projects">{{ 'header.projects' | translate }}</a>
-        <a href="#ContactSectionID" class="nav_link nav_link--contact">{{ 'header.contact' | translate }}</a>
+
+        <a routerLink="/" fragment="AboutMeSectionID" class="nav_link nav_link--about">
+            {{ 'header.aboutMe' | translate }}
+        </a>
+
+        <a routerLink="/" fragment="SkillsSectionID" class="nav_link nav_link--skills">
+            {{ 'header.skills' | translate }}
+        </a>
+
+        <a routerLink="/" fragment="ProjectsSectionID" class="nav_link nav_link--projects">
+            {{ 'header.projects' | translate }}
+        </a>
+
+        <a routerLink="/" fragment="ContactSectionID" class="nav_link nav_link--contact">
+            {{ 'header.contact' | translate }}
+        </a>
         <section class="language_toggle_section">
-            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)" (click)="useLanguage('en')">
+            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)"
+                (click)="useLanguage('en')">
                 EN
             </p>
 
@@ -16,7 +28,8 @@
                 <div class="language-toggle__circle"></div>
             </div>
 
-            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)" (click)="useLanguage('de')">
+            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)"
+                (click)="useLanguage('de')">
                 DE
             </p>
         </section>
@@ -38,13 +51,18 @@
 
     <div class="burger_menu_selection" [class.burger_menu_selection__visible]="isNavOpen">
 
-        <a href="#AboutMeSectionID" class="nav_link nav_link--about" (click)="closeMenu()">{{ 'header.aboutMe' | translate }}</a>
-        <a href="#SkillsSectionID"  class="nav_link nav_link--skills" (click)="closeMenu()">{{ 'header.skills' | translate }}</a>
-        <a href="#ProjectsSectionID" class="nav_link nav_link--projects" (click)="closeMenu()">{{ 'header.projects' | translate }}</a>
-        <a href="#ContactSectionID" class="nav_link nav_link--contact" (click)="closeMenu()">{{ 'header.contact' | translate }}</a>
+        <a href="#AboutMeSectionID" class="nav_link nav_link--about" (click)="closeMenu()">{{ 'header.aboutMe' |
+            translate }}</a>
+        <a href="#SkillsSectionID" class="nav_link nav_link--skills" (click)="closeMenu()">{{ 'header.skills' |
+            translate }}</a>
+        <a href="#ProjectsSectionID" class="nav_link nav_link--projects" (click)="closeMenu()">{{ 'header.projects' |
+            translate }}</a>
+        <a href="#ContactSectionID" class="nav_link nav_link--contact" (click)="closeMenu()">{{ 'header.contact' |
+            translate }}</a>
 
         <section class="language_toggle_section">
-            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)" (click)="useLanguage('en')">
+            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)"
+                (click)="useLanguage('en')">
                 EN
             </p>
 
@@ -52,7 +70,8 @@
                 <div class="language-toggle__circle"></div>
             </div>
 
-            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)" (click)="useLanguage('de')">
+            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)"
+                (click)="useLanguage('de')">
                 DE
             </p>
         </section>
@@ -63,10 +82,12 @@
                         [src]="'./assets/icons/contact_icons/linkedin.svg'"></a>
             </div>
             <div class="content_container_contact_icon">
-                <a href="https://github.com/nolticodes" (click)="closeMenu()"><img [src]="'./assets/icons/contact_icons/github.svg'"></a>
+                <a href="https://github.com/nolticodes" (click)="closeMenu()"><img
+                        [src]="'./assets/icons/contact_icons/github.svg'"></a>
             </div>
             <div class="content_container_contact_icon">
-                <a href="mailto:denis.nolting@gmx.de" (click)="closeMenu()"><img [src]="'./assets/icons/contact_icons/mail.svg'"></a>
+                <a href="mailto:denis.nolting@gmx.de" (click)="closeMenu()"><img
+                        [src]="'./assets/icons/contact_icons/mail.svg'"></a>
             </div>
         </div>
 
