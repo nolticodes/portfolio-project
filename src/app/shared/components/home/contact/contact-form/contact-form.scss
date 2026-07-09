@@ -220,3 +220,13 @@ input::placeholder {
     }
 
 }
+
+.error-placeholder::placeholder {
+  color: red;
+  opacity: 1;
+}
+
+.error-title {
+    color: #F87A55;
+    opacity: 1;
+}

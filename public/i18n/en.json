@@ -87,7 +87,10 @@
             "policy": "privacy policy",
             "policyOne": "I've read the ",
             "policyTwo": " and agree to the processing of my data as outlined",
-            "send": "Send"
+            "send": "Send",
+            "nameError": "Oops! It seems your name is missing",
+            "mailError": "Hoppla! Your email is required",
+            "messageError": "What do you need to develop"
         }
     },
     "legalNotice": {

@@ -8,6 +8,11 @@ import { RouterLink } from "@angular/router";
 export function forbiddenEmailValidator(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
     const eMailValue = control.value;
+
+    if (!eMailValue) {
+      return null;
+    }
+
     const hasValidEnding = eMailValue.endsWith('.com') || eMailValue.endsWith('.de');
     return !hasValidEnding ? { invalidEmailEnding: { forbiddenEmail: eMailValue } } : null;
   };
@@ -39,8 +44,9 @@ export function forbiddenMessageValidator(): ValidatorFn {
   styleUrl: './contact-form.scss',
 })
 export class ContactForm {
-
   private translate = inject(TranslateService);
+
+  submitted = false;
 
   userForm = new FormGroup({
     firstName: new FormControl('', {
@@ -55,13 +61,22 @@ export class ContactForm {
     privacyPolicy: new FormControl(false, {
       validators: [Validators.requiredTrue]
     })
-  })
+  });
 
   formSubmit() {
-    console.log(this.userForm.value)
+    this.submitted = true;
+
+    if (this.userForm.invalid) {
+      this.userForm.markAllAsTouched();
+      return;
+    }
+
+    console.log(this.userForm.value);
   }
 
   formReset() {
+    this.submitted = false;
+
     this.userForm.reset({
       firstName: '',
       eMail: '',
@@ -70,8 +85,27 @@ export class ContactForm {
     });
   }
 
-  get email() {
-    return this.userForm.get("eMail")
+  get firstName() {
+    return this.userForm.get('firstName');
   }
 
+  get email() {
+    return this.userForm.get('eMail');
+  }
+
+  get message() {
+    return this.userForm.get('message');
+  }
+
+  get firstNameRequired() {
+    return !!this.firstName?.touched && !!this.firstName?.hasError('required');
+  }
+
+  get emailRequired() {
+    return !!this.email?.touched && !!this.email?.hasError('required');
+  }
+
+  get messageRequired() {
+    return !!this.message?.touched && !!this.message?.hasError('required');
+  }
 }
