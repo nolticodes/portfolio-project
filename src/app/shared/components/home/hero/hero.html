@@ -31,7 +31,9 @@
                 <h1 appChangeLetterHover>DEVELOPER</h1>
             </div>
             <div class="content_container_btn_contact">
-                <a href="#ContactSectionID">{{'home.hero.getInTouch' | translate}}</a>
+                <a [routerLink]="[]" fragment="contact-section">
+                    {{ 'home.hero.getInTouch' | translate }}
+                </a>
             </div>
         </div>
 
@@ -42,7 +44,8 @@
                 </a>
             </div>
             <div class="content_container_contact_icon">
-                <a href="https://github.com/nolticodes" target="_blank"><img [src]="'./assets/icons/contact_icons/github.svg'"></a>
+                <a href="https://github.com/nolticodes" target="_blank"><img
+                        [src]="'./assets/icons/contact_icons/github.svg'"></a>
             </div>
             <div class="content_container_contact_icon">
                 <a href="mailto:denis.nolting@gmx.de"><img [src]="'./assets/icons/contact_icons/mail.svg'"></a>

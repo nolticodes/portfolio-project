@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 import { ChangeLetterHover } from '../../../directives/change-letter-hover';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-hero',
-  imports: [ChangeLetterHover, TranslatePipe],
+  imports: [ChangeLetterHover, TranslatePipe, RouterLink],
   templateUrl: './hero.html',
   styleUrl: './hero.scss',
 })
