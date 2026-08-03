@@ -12,6 +12,7 @@
     width: 100%;
     max-width: 1920px;
     height: 100dvh;
+    min-height: fit-content;
     max-height: 100dvh;
     padding: 0 120px;
     display: flex;
@@ -420,13 +421,13 @@
 
     .content_container {
         height: 600px;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
 
     .text_section__polaroid_sticker {
         position: absolute;
 
-        top: 40%;
+        top: 22%;
         right: calc((100% + 240px) / 2);
 
     }
