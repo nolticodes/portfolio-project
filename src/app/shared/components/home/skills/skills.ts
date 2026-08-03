@@ -19,7 +19,6 @@ export class Skills {
     { name: "REST-API", imgUrl: "./assets/icons/frontend_skills/Rest-Api.svg" },
     { name: "Angular", imgUrl: "./assets/icons/frontend_skills/Angular.svg" },
     { name: "TypeScript", imgUrl: "./assets/icons/frontend_skills/Ts.svg" },
-    { name: "MaterialDesign", imgUrl: "./assets/icons/frontend_skills/MaterialDesign.svg" },
     { name: "React", imgUrl: "./assets/icons/frontend_skills/React.svg" },
     { name: "Scrum", imgUrl: "./assets/icons/frontend_skills/Scrum.svg" },
     { name: "Supabase", imgUrl: "./assets/icons/frontend_skills/Supabase.svg" },
