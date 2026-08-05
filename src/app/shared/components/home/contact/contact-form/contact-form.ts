@@ -18,13 +18,13 @@ export function forbiddenEmailValidator(): ValidatorFn {
   };
 }
 
-export function forbiddenEmailValidatorTwo(): ValidatorFn {
+export function forbiddenNameValidator(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
     return control.value == "Your name goes here" ? { forbiddenEmail: { value: control.value } } : null;
   };
 }
 
-export function forbiddenNameValidator(): ValidatorFn {
+export function forbiddenEmailValidatorTwo(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
     return control.value == "youremail@email.com" ? { forbiddenName: { value: control.value } } : null;
   };
@@ -63,7 +63,7 @@ export class ContactForm {
     })
   });
 
-  formSubmit() {
+  async formSubmit() {
     this.submitted = true;
 
     if (this.userForm.invalid) {
@@ -71,7 +71,32 @@ export class ContactForm {
       return;
     }
 
-    console.log(this.userForm.value);
+    const { firstName, eMail, message } = this.userForm.getRawValue();
+
+    try {
+      const response = await fetch('/contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: firstName,
+          email: eMail,
+          message: message
+        })
+      });
+
+      const result: { success: boolean } = await response.json();
+
+      if (response.ok && result.success) {
+        console.log('Nachricht wurde erfolgreich versendet.');
+        this.formReset();
+      } else {
+        console.error('Die Nachricht konnte nicht versendet werden.');
+      }
+    } catch (error) {
+      console.error('Netzwerkfehler beim Versenden:', error);
+    }
   }
 
   formReset() {
