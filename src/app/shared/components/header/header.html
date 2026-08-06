@@ -19,17 +19,15 @@
             {{ 'header.contact' | translate }}
         </a>
         <section class="language_toggle_section">
-            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)"
-                (click)="useLanguage('en')">
+            <p class="language language-en" [class.active-language]="isEnglish" (click)="switchLanguage('en')">
                 EN
             </p>
 
-            <div class="language-toggle" [class.active]="isEnglish" (click)="toggleLanguage()">
+            <div class="language-toggle" [class.active]="isEnglish" (click)="switchLanguage(isEnglish ? 'de' : 'en')">
                 <div class="language-toggle__circle"></div>
             </div>
 
-            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)"
-                (click)="useLanguage('de')">
+            <p class="language language-de" [class.active-language]="!isEnglish" (click)="switchLanguage('de')">
                 DE
             </p>
         </section>
@@ -51,27 +49,29 @@
 
     <div class="burger_menu_selection" [class.burger_menu_selection__visible]="isNavOpen">
 
-        <a href="#AboutMeSectionID" class="nav_link nav_link--about" (click)="closeMenu()">{{ 'header.aboutMe' |
+        <a [routerLink]=[] fragment="AboutMeSectionID" class="nav_link nav_link--about" (click)="closeMenu()">{{
+            'header.aboutMe' |
             translate }}</a>
-        <a href="#SkillsSectionID" class="nav_link nav_link--skills" (click)="closeMenu()">{{ 'header.skills' |
+        <a [routerLink]=[] fragment="SkillsSectionID" class="nav_link nav_link--skills" (click)="closeMenu()">{{
+            'header.skills' |
             translate }}</a>
-        <a href="#ProjectsSectionID" class="nav_link nav_link--projects" (click)="closeMenu()">{{ 'header.projects' |
+        <a [routerLink]=[] fragment="ProjectsSectionID" class="nav_link nav_link--projects" (click)="closeMenu()">{{
+            'header.projects' |
             translate }}</a>
-        <a href="#ContactSectionID" class="nav_link nav_link--contact" (click)="closeMenu()">{{ 'header.contact' |
+        <a [routerLink]=[] fragment="contact-section" class="nav_link nav_link--contact" (click)="closeMenu()">{{
+            'header.contact' |
             translate }}</a>
 
         <section class="language_toggle_section">
-            <p class="language language-en" [class.active-language]="isEnglish" (click)="setLanguage(true)"
-                (click)="useLanguage('en')">
+            <p class="language language-en" [class.active-language]="isEnglish" (click)="switchLanguage('en')">
                 EN
             </p>
 
-            <div class="language-toggle" [class.active]="isEnglish" (click)="toggleLanguage()">
+            <div class="language-toggle" [class.active]="isEnglish" (click)="switchLanguage(isEnglish ? 'de' : 'en')">
                 <div class="language-toggle__circle"></div>
             </div>
 
-            <p class="language language-de" [class.active-language]="!isEnglish" (click)="setLanguage(false)"
-                (click)="useLanguage('de')">
+            <p class="language language-de" [class.active-language]="!isEnglish" (click)="switchLanguage('de')">
                 DE
             </p>
         </section>

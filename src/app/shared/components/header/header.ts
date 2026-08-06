@@ -9,22 +9,20 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './header.scss',
 })
 export class Header {
-
   private translate = inject(TranslateService);
-
-  useLanguage(language: string): void {
-    this.translate.use(language);
-  }
+  private router = inject(Router);
 
   isEnglish = true;
   isNavOpen = false;
 
-  toggleLanguage() {
-    this.isEnglish = !this.isEnglish;
+  switchLanguage(language: 'en' | 'de') {
+    this.isEnglish = language === 'en';
+    this.translate.use(language);
   }
 
-  setLanguage(isEnglish: boolean) {
-    this.isEnglish = isEnglish;
+  toggleLanguage() {
+    const newLanguage = this.isEnglish ? 'de' : 'en';
+    this.switchLanguage(newLanguage);
   }
 
   toggleMenu() {
@@ -41,8 +39,6 @@ export class Header {
     this.isNavOpen = false;
     document.body.classList.remove('no-scroll');
   }
-
-  router = inject(Router);
 
   isProjectPage() {
     return this.router.url.includes('/projects/');
