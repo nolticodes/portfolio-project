@@ -13,6 +13,7 @@
     width: 100%;
     max-width: 1920px;
     padding: 220px 120px;
+    padding-bottom: 300px;
     color: white;
     display: flex;
 
@@ -201,6 +202,12 @@ app-contact-form {
 @media (max-width:1000px) {
     .content {
         padding: 220px 24px;
+    }
+}
+
+@media (max-width:650px) {
+    .content {
+        padding-bottom: 320px;
     }
 }
 

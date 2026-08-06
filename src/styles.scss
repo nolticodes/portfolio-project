@@ -45,14 +45,20 @@ app-footer {
 
 @media (max-width: 1250px) {
     app-footer {
-        background-color: black;
-        margin-top: -100px;
+        // background-color: black;
+        margin-top: -300px;
     }
-    
+}
+
+@media (max-width: 650px) {
+    app-footer {
+        // background-color: black;
+        margin-top: -320px;
+    }
 }
 
 
 app-footer.footer-static {
     margin-top: 0 !important;
-    color:black;
+    // color:black;
 }
