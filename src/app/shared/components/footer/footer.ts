@@ -45,4 +45,8 @@ export class Footer {
       ? './assets/icons/contact_icons/mail_black.svg'
       : './assets/icons/contact_icons/mail.svg';
   }
+
+  isProjectPage() {
+    return this.router.url.includes('/projects/');
+  }
 }
