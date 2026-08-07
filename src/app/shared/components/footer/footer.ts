@@ -29,21 +29,15 @@ export class Footer {
   }
 
   get linkedinIcon() {
-    return this.isStaticPage
-      ? './assets/icons/contact_icons/linkedin_black.svg'
-      : './assets/icons/contact_icons/linkedin.svg';
+    return './assets/icons/contact_icons/linkedin_black.svg';
   }
 
   get githubIcon() {
-    return this.isStaticPage
-      ? './assets/icons/contact_icons/github_black.svg'
-      : './assets/icons/contact_icons/github.svg';
+    return './assets/icons/contact_icons/github_black.svg';
   }
 
   get mailIcon() {
-    return this.isStaticPage
-      ? './assets/icons/contact_icons/mail_black.svg'
-      : './assets/icons/contact_icons/mail.svg';
+    return './assets/icons/contact_icons/mail_black.svg';
   }
 
   isProjectPage() {
