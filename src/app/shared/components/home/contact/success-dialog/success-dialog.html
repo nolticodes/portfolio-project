@@ -1,0 +1,19 @@
+
+
+<section class="backdrop" (click)="closeDialog()">
+  <div
+    class="content"
+    role="dialog"
+    aria-modal="true"
+    (click)="$event.stopPropagation()"
+  >
+    <div class="header_close">
+      <div class="header_close">
+            <button (click)="closeDialog()"><img src="/assets/img/project_details/arrow_back.svg" /></button>
+        </div>
+    </div>
+
+    <h2>{{ 'home.contact.successTitle' | translate }}</h2>
+    <p>{{ 'home.contact.successText' | translate }}</p>
+  </div>
+</section>
