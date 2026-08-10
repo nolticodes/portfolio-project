@@ -1,26 +1,29 @@
 <form class="contact_form" [formGroup]="userForm" (ngSubmit)="formSubmit()">
     <div class="contact_form_border">
-        <label for="name" [class.error-title]="firstNameRequired">{{ 'home.contact.nameQuestion' | translate }}</label>
-        <input id="name" type="text" formControlName="firstName" [class.error-placeholder]="firstNameRequired"
-            [placeholder]="firstNameRequired
-    ? ('home.contact.nameError' | translate)
-    : ('home.contact.nameAnswer' | translate)" />
+        <label for="name" [class.error-title]="firstNameInvalid">
+            {{ firstNameLabel | translate }}
+        </label>
+
+        <input id="name" type="text" formControlName="firstName" [class.error-placeholder]="firstNameInvalid"
+            [placeholder]="'home.contact.nameAnswer' | translate" />
     </div>
 
     <div class="contact_form_border">
-        <label for="mail" [class.error-title]="emailRequired">{{ 'home.contact.emailQuestion' | translate }}</label>
-        <input id="mail" type="text" formControlName="eMail" [class.error-placeholder]="emailRequired" [placeholder]="emailRequired
-    ? ('home.contact.mailError' | translate)
-    : ('home.contact.emailAnswer' | translate)" />
+        <label for="mail" [class.error-title]="emailInvalid">
+            {{ emailLabel | translate }}
+        </label>
+
+        <input id="mail" type="email" formControlName="eMail" [class.error-placeholder]="emailInvalid"
+            [placeholder]="'home.contact.emailAnswer' | translate" />
     </div>
 
-
     <div class="contact_form_border">
-        <label for="message" [class.error-title]="messageRequired">{{ 'home.contact.messageQuestion' | translate }}</label>
-        <input id="message" type="text" formControlName="message" [class.error-placeholder]="messageRequired"
-            [placeholder]="messageRequired
-    ? ('home.contact.messageError' | translate)
-    : ('home.contact.messageAnswer' | translate)" />
+        <label for="message" [class.error-title]="messageInvalid">
+            {{ messageLabel | translate }}
+        </label>
+
+        <input id="message" type="text" formControlName="message" [class.error-placeholder]="messageInvalid"
+            [placeholder]="'home.contact.messageAnswer' | translate" />
     </div>
 
     <div class="contact_form_policy">
@@ -31,8 +34,8 @@
             </span>
         </label>
 
-        <p for="checkbox"> <span>{{ 'home.contact.policyOne' | translate }}</span> <a routerLink="/privacy-policy"
-                >privacy policy</a>
+        <p for="checkbox"> <span>{{ 'home.contact.policyOne' | translate }}</span> <a
+                routerLink="/privacy-policy">privacy policy</a>
             <span>{{ 'home.contact.policyTwo' | translate }}</span>
         </p>
     </div>

@@ -50,16 +50,34 @@ export class ContactForm {
 
   userForm = new FormGroup({
     firstName: new FormControl('', {
-      validators: [Validators.required, Validators.minLength(4), forbiddenNameValidator()]
+      validators: [
+        Validators.required,
+        Validators.minLength(2)
+      ],
+      updateOn: 'blur'
     }),
+
     eMail: new FormControl('', {
-      validators: [Validators.required, Validators.email, forbiddenEmailValidator(), forbiddenEmailValidatorTwo()]
+      validators: [
+        Validators.required,
+        Validators.email
+      ],
+      updateOn: 'blur'
     }),
+
     message: new FormControl('', {
-      validators: [Validators.required, Validators.minLength(10), Validators.maxLength(200), forbiddenMessageValidator()]
+      validators: [
+        Validators.required,
+        Validators.minLength(20),
+        Validators.maxLength(200)
+      ],
+      updateOn: 'blur'
     }),
+
     privacyPolicy: new FormControl(false, {
-      validators: [Validators.requiredTrue]
+      validators: [
+        Validators.requiredTrue
+      ]
     })
   });
 
@@ -122,15 +140,63 @@ export class ContactForm {
     return this.userForm.get('message');
   }
 
-  get firstNameRequired() {
-    return !!this.firstName?.touched && !!this.firstName?.hasError('required');
+  get firstNameInvalid(): boolean {
+    return !!this.firstName?.touched && !!this.firstName?.invalid;
   }
 
-  get emailRequired() {
-    return !!this.email?.touched && !!this.email?.hasError('required');
+  get emailInvalid(): boolean {
+    return !!this.email?.touched && !!this.email?.invalid;
   }
 
-  get messageRequired() {
-    return !!this.message?.touched && !!this.message?.hasError('required');
+  get messageInvalid(): boolean {
+    return !!this.message?.touched && !!this.message?.invalid;
+  }
+
+  get firstNameLabel(): string {
+    if (!this.firstName?.touched) {
+      return 'home.contact.nameQuestion';
+    }
+
+    if (this.firstName.hasError('required')) {
+      return 'home.contact.nameError';
+    }
+
+    if (this.firstName.hasError('minlength')) {
+      return 'home.contact.nameLengthError';
+    }
+
+    return 'home.contact.nameQuestion';
+  }
+
+  get emailLabel(): string {
+    if (!this.email?.touched) {
+      return 'home.contact.emailQuestion';
+    }
+
+    if (this.email.hasError('required')) {
+      return 'home.contact.mailError';
+    }
+
+    if (this.email.hasError('email')) {
+      return 'home.contact.mailEndingError';
+    }
+
+    return 'home.contact.emailQuestion';
+  }
+
+  get messageLabel(): string {
+    if (!this.message?.touched) {
+      return 'home.contact.messageQuestion';
+    }
+
+    if (this.message.hasError('required')) {
+      return 'home.contact.messageError';
+    }
+
+    if (this.message.hasError('minlength')) {
+      return 'home.contact.messageLengthError';
+    }
+
+    return 'home.contact.messageQuestion';
   }
 }
