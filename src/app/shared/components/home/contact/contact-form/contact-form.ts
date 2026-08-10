@@ -1,9 +1,8 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, Output, EventEmitter } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { RouterLink } from "@angular/router";
-
 
 export function forbiddenEmailValidator(): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
@@ -45,6 +44,8 @@ export function forbiddenMessageValidator(): ValidatorFn {
 })
 export class ContactForm {
   private translate = inject(TranslateService);
+
+  @Output() mailSent = new EventEmitter<void>();
 
   submitted = false;
 
@@ -100,15 +101,15 @@ export class ContactForm {
         body: JSON.stringify({
           name: firstName,
           email: eMail,
-          message: message
+          message
         })
       });
 
       const result: { success: boolean } = await response.json();
 
       if (response.ok && result.success) {
-        console.log('Nachricht wurde erfolgreich versendet.');
         this.formReset();
+        this.mailSent.emit();
       } else {
         console.error('Die Nachricht konnte nicht versendet werden.');
       }

@@ -93,7 +93,9 @@
             "messageError": "Wobei kann ich dir helfen?",
             "nameLengthError": "Der Name ist zu kurz.",
             "mailEndingError": "Die E-Mail-Adresse muss ein @ enthalten und auf .de oder .com enden.",
-            "messageLengthError": "Die Nachricht muss mindestens 20 Zeichen lang sein."
+            "messageLengthError": "Die Nachricht muss mindestens 20 Zeichen lang sein.",
+            "successTitle": "Vielen Dank!",
+            "successText": "Deine Nachricht wurde erfolgreich übermittelt. Ich freue mich darauf, von dir zu hören und melde mich bald bei dir."
         }
     },
     "legalNotice": {

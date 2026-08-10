@@ -93,7 +93,9 @@
             "messageError": "What do you need to develop",
             "nameLengthError": "Name must be at least 2 characters long.",
             "mailEndingError": "Please enter a valid email address.",
-            "messageLengthError": "Message must be at least 20 characters long."
+            "messageLengthError": "Message must be at least 20 characters long.",
+            "successTitle": "Thank you!",
+            "successText": "Your message has been sent successfully. I appreciate you reaching out and will get back to you soon."
         }
     },
     "legalNotice": {

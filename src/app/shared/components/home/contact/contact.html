@@ -37,8 +37,6 @@
                 <img [src]="'./assets/animation_img/contact/line.svg'">
             </div>
 
-
-
         </div>
 
         <div class="content_right">
@@ -64,8 +62,14 @@
             </div>
 
 
-            <app-contact-form></app-contact-form>
+            <app-contact-form (mailSent)="openDialog()"></app-contact-form>
         </div>
 
     </div>
 </section>
+
+@if (isDialogOpen) {
+  <app-success-dialog
+    (close)="closeDialog()"
+  ></app-success-dialog>
+}
