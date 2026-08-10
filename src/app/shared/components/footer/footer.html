@@ -1,4 +1,5 @@
-<section class="full_width" [class.footer-dark]="isLegalNoticePage() || isPolicyPage()" [class.project-footer]="isProjectPage()">
+<section class="full_width" [class.footer-dark]="isLegalNoticePage() || isPolicyPage()"
+    [class.project-footer]="isProjectPage()">
 
     <div class="content">
 
@@ -48,23 +49,32 @@
 
         <div class="content_element_container_single_mobile_all">
             <div class="content_element_container_single_mobile">
-                <a href="https://github.com/nolticodes" target="_blank">GitHub</a>
+                <a href="https://github.com/nolticodes" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
                 <div class="content_element_container_single_icon">
-                    <img [src]="'./assets/icons/contact_icons/github_black.svg'">
+                    <img [src]="githubIcon" alt="">
                 </div>
             </div>
 
             <div class="content_element_container_single_mobile">
-                <a href="https://www.linkedin.com/in/denis-nolting/" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/denis-nolting/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
                 <div class="content_element_container_single_icon">
-                    <img [src]="'./assets/icons/contact_icons/linkedin_black.svg'">
+                    <img [src]="linkedinIcon" alt="">
                 </div>
             </div>
 
             <div class="content_element_container_single_mobile">
-                <a href="mailto:denis.nolting@gmx.de">Email</a>
+                <a href="mailto:denis.nolting@gmx.de">
+                    Email
+                </a>
+
                 <div class="content_element_container_single_icon">
-                    <img [src]="'./assets/icons/contact_icons/mail_black.svg'">
+                    <img [src]="mailIcon" alt="">
                 </div>
             </div>
         </div>

@@ -21,23 +21,31 @@ export class Footer {
   }
 
   @HostBinding('class.footer-static')
-  get isStaticPage() {
+  get isStaticPage(): boolean {
+    const currentPath = this.router.url.split(/[?#]/)[0];
+
     return [
       '/legal-notice',
       '/privacy-policy'
-    ].includes(this.router.url);
+    ].includes(currentPath);
   }
 
-  get linkedinIcon() {
-    return './assets/icons/contact_icons/linkedin_black.svg';
+  get linkedinIcon(): string {
+    return this.isStaticPage
+      ? './assets/icons/contact_icons/linkedin_black.svg'
+      : './assets/icons/contact_icons/linkedin.svg';
   }
 
-  get githubIcon() {
-    return './assets/icons/contact_icons/github_black.svg';
+  get githubIcon(): string {
+    return this.isStaticPage
+      ? './assets/icons/contact_icons/github_black.svg'
+      : './assets/icons/contact_icons/github.svg';
   }
 
-  get mailIcon() {
-    return './assets/icons/contact_icons/mail_black.svg';
+  get mailIcon(): string {
+    return this.isStaticPage
+      ? './assets/icons/contact_icons/mail_black.svg'
+      : './assets/icons/contact_icons/mail.svg';
   }
 
   isProjectPage() {
