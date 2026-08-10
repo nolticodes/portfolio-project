@@ -2,7 +2,8 @@
     font-size: 18px;
     font-weight: 500;
 
-    a, p {
+    a,
+    p {
         text-decoration: none;
         mix-blend-mode: difference;
         color: white;
@@ -227,6 +228,7 @@
         align-items: flex-end;
         justify-content: space-between;
         padding: 24px 0px;
+        gap: 12px;
     }
 
     .content_element_container_single {
@@ -271,6 +273,21 @@
                 animation: hoverStart 900ms ease-out forwards;
             }
         }
+    }
+
+    .content_element_container_img {
+        height: 35px;
+        width: 70px;
+    }
+
+    .content_element_container_mobile {
+        align-items: center;
+    }
+
+    .content_element_container_legal_background {
+        left:auto;
+        top: 20px;
+        right: 15px;
     }
 }
 
