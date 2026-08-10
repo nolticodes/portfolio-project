@@ -90,7 +90,10 @@
             "send": "Send",
             "nameError": "Oops! It seems your name is missing",
             "mailError": "Hoppla! Your email is required",
-            "messageError": "What do you need to develop"
+            "messageError": "What do you need to develop",
+            "nameLengthError": "Name must be at least 2 characters long.",
+            "mailEndingError": "Please enter a valid email address.",
+            "messageLengthError": "Message must be at least 20 characters long."
         }
     },
     "legalNotice": {
