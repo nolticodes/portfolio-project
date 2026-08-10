@@ -35,8 +35,8 @@ export class ProjectDetail {
         },
       ],
       duration: 'home.projectDetails.join.duration',
-      linkGithub: 'https://github.com/nolticodes/',
-      linkLiveTest: '',
+      linkGithub: 'https://github.com/nolticodes/join-app',
+      linkLiveTest: '/join/',
     },
     {
       name: 'El Pollo Loco',
@@ -61,7 +61,7 @@ export class ProjectDetail {
       ],
       duration: 'home.projectDetails.elPolloLoco.duration',
       linkGithub: 'https://github.com/nolticodes/game_jump_and_run_el_pollo_loco',
-      linkLiveTest: '',
+      linkLiveTest: '/el-pollo-loco/',
     },
     {
       name: 'Pokedex',
@@ -90,7 +90,7 @@ export class ProjectDetail {
       ],
       duration: 'home.projectDetails.pokemon.duration',
       linkGithub: 'https://github.com/nolticodes/pokedex_app',
-      linkLiveTest: '',
+      linkLiveTest: '/pokedex/',
     }
   ];
 
