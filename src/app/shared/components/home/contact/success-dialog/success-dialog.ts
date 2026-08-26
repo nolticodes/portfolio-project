@@ -16,6 +16,7 @@ export class SuccessDialog {
 
   @Output() close = new EventEmitter<void>();
 
+  /** Emits an event that requests the parent component to close the dialog. */
   closeDialog(): void {
     this.close.emit();
   }

@@ -43,7 +43,8 @@ export class ProjectDetail {
       slug: 'el-pollo-loco',
       widthLine: '320px',
       description: 'home.projectDetails.elPolloLoco.description',
-      implemantationDetails: 'home.projectDetails.elPolloLoco.implementation',
+      implemantationDetails:
+        'home.projectDetails.elPolloLoco.implementation',
       imageUrl: './assets/img/projects/pollo.png',
       technologies: [
         {
@@ -60,7 +61,8 @@ export class ProjectDetail {
         },
       ],
       duration: 'home.projectDetails.elPolloLoco.duration',
-      linkGithub: 'https://github.com/nolticodes/game_jump_and_run_el_pollo_loco',
+      linkGithub:
+        'https://github.com/nolticodes/game_jump_and_run_el_pollo_loco',
       linkLiveTest: '/el-pollo-loco/',
     },
     {
@@ -68,7 +70,8 @@ export class ProjectDetail {
       slug: 'pokemon',
       widthLine: '250px',
       description: 'home.projectDetails.pokemon.description',
-      implemantationDetails: 'home.projectDetails.pokemon.implementation',
+      implemantationDetails:
+        'home.projectDetails.pokemon.implementation',
       imageUrl: './assets/img/projects/pokedex.png',
       technologies: [
         {
@@ -91,15 +94,18 @@ export class ProjectDetail {
       duration: 'home.projectDetails.pokemon.duration',
       linkGithub: 'https://github.com/nolticodes/pokedex_app',
       linkLiveTest: '/pokedex/',
-    }
+    },
   ];
 
   project = this.projects[0];
 
+  /** Loads the project whose slug matches the current route parameter. */
   constructor() {
-    this.route.paramMap.subscribe(params => {
+    this.route.paramMap.subscribe((params) => {
       const slug = params.get('slug');
-      const foundProject = this.projects.find(project => project.slug === slug);
+      const foundProject = this.projects.find(
+        (project) => project.slug === slug
+      );
 
       if (foundProject) {
         this.project = foundProject;
@@ -107,14 +113,15 @@ export class ProjectDetail {
     });
   }
 
-  goToNextProject() {
+  /** Navigates from the current project to the next project in the list. */
+  goToNextProject(): void {
     const currentIndex = this.projects.findIndex(
-      project => project.slug === this.project.slug
+      (project) => project.slug === this.project.slug
     );
+
     const nextIndex = (currentIndex + 1) % this.projects.length;
     const nextProject = this.projects[nextIndex];
 
     this.router.navigate(['/projects', nextProject.slug]);
   }
-
 }

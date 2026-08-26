@@ -14,13 +14,15 @@ export class Hero {
   hoverText = "I'm Denis Nolting";
   displayText = this.defaultText;
 
-  onMouseEnter() {
+  /** Changes the displayed text after a short delay when the pointer enters the element. */
+  onMouseEnter(): void {
     setTimeout(() => {
       this.displayText = this.hoverText;
     }, 200);
   }
 
-  onMouseLeave() {
+  /** Restores the default text when the pointer leaves the element. */
+  onMouseLeave(): void {
     this.displayText = this.defaultText;
   }
 }

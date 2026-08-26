@@ -8,6 +8,7 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './testimonials.scss',
 })
 export class Testimonials {
+  /** Contains the testimonial information displayed in the testimonials section. */
   testimonials = [
     {
       cardImage: 'assets/img/testimonials/testimonial_a.svg',
@@ -15,7 +16,7 @@ export class Testimonials {
       name: 'Weihnachtsmann1',
       commentKey: 'home.testimonials.comment_one',
       profileUrl: 'https://de.linkedin.com',
-      rotationClass: 'rotate_left'
+      rotationClass: 'rotate_left',
     },
     {
       cardImage: 'assets/img/testimonials/testimonial_b.svg',
@@ -23,7 +24,7 @@ export class Testimonials {
       name: 'Weihnachtsmann2',
       commentKey: 'home.testimonials.comment_two',
       profileUrl: 'https://de.linkedin.com',
-      rotationClass: ''
+      rotationClass: '',
     },
     {
       cardImage: 'assets/img/testimonials/testimonial_a.svg',
@@ -31,7 +32,7 @@ export class Testimonials {
       name: 'Weihnachtsmann3',
       commentKey: 'home.testimonials.comment_three',
       profileUrl: 'https://de.linkedin.com',
-      rotationClass: 'rotate_right'
-    }
+      rotationClass: 'rotate_right',
+    },
   ];
 }

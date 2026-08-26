@@ -15,17 +15,20 @@ export class Header {
   isEnglish = true;
   isNavOpen = false;
 
-  switchLanguage(language: 'en' | 'de') {
+  /** Changes the active language and updates the language toggle state. */
+  switchLanguage(language: 'en' | 'de'): void {
     this.isEnglish = language === 'en';
     this.translate.use(language);
   }
 
-  toggleLanguage() {
+  /** Switches between the English and German languages. */
+  toggleLanguage(): void {
     const newLanguage = this.isEnglish ? 'de' : 'en';
     this.switchLanguage(newLanguage);
   }
 
-  toggleMenu() {
+  /** Opens or closes the navigation menu and updates the page's scroll state. */
+  toggleMenu(): void {
     this.isNavOpen = !this.isNavOpen;
 
     if (this.isNavOpen) {
@@ -35,12 +38,14 @@ export class Header {
     }
   }
 
-  closeMenu() {
+  /** Closes the navigation menu and restores page scrolling. */
+  closeMenu(): void {
     this.isNavOpen = false;
     document.body.classList.remove('no-scroll');
   }
 
-  isProjectPage() {
+  /** Checks whether the current route belongs to a project detail page. */
+  isProjectPage(): boolean {
     return this.router.url.includes('/projects/');
   }
 }
