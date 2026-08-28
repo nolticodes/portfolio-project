@@ -393,22 +393,13 @@
 }
 
 
-.project-header .nav_link--about {
-    color: black
-}
-
-.project-header .nav_link--skills {
-    color: black
-}
-
-.project-header .burger_menu_selection a {
-    color: white
-}
-
-@media (max-width: 1250px) {
-    .project-header a {
-        color: black;
-    }
+.project-header {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.65) 45%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 @media (max-width: 850px) {
