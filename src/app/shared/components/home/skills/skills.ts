@@ -41,20 +41,12 @@ export class Skills {
       imgUrl: './assets/icons/frontend_skills/Ts.svg',
     },
     {
-      name: 'React',
-      imgUrl: './assets/icons/frontend_skills/React.svg',
-    },
-    {
       name: 'Scrum',
       imgUrl: './assets/icons/frontend_skills/Scrum.svg',
     },
     {
       name: 'Supabase',
       imgUrl: './assets/icons/frontend_skills/Supabase.svg',
-    },
-    {
-      name: 'Vue.Js',
-      imgUrl: './assets/icons/frontend_skills/Vue.Js.svg',
     },
     {
       name: 'Cloud',
