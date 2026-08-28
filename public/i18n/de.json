@@ -45,7 +45,7 @@
             "introduction": "Wirf einen Blick auf die Projekte, an denen ich gearbeitet habe, und die Fähigkeiten, die ich dabei eingesetzt habe. Jedes Projekt enthält eine kurze Übersicht, wichtige Informationen und die Möglichkeit, es genauer zu erkunden.",
             "projectDetails": "Projektdetails",
             "description": {
-                "join": "Beschreibung join",
+                "join": "Join ist eine responsive Aufgabenmanagement-App mit einem intuitiven Kanban-Board. Aufgaben können erstellt, priorisiert, Kontakten zugewiesen und per Drag-and-drop organisiert werden. Die mit Angular, TypeScript und Supabase entwickelte Anwendung bietet außerdem Unteraufgaben, Fortschrittsanzeigen, Kontaktverwaltung und Echtzeit-Synchronisation.",
                 "elPolloLoco": "Ein 2D-Jump-and-Run-Spiel, entwickelt mit JavaScript und HTML5 Canvas. Das Projekt umfasst objektorientierte Programmierung, Sprite-Animationen, Kollisionserkennung sowie einen spannenden Endgegner-Kampf.",
                 "pokemon": "Eine interaktive Pokédex-Anwendung, entwickelt mit JavaScript und der PokéAPI. Durchsuche, finde und entdecke Pokémon mithilfe dynamisch geladener Daten und einer responsiven Benutzeroberfläche."
             }
@@ -57,7 +57,7 @@
             "duration": "Dauer:",
             "next": "Nächstes Projekt",
             "join": {
-                "description": "Beschreibung Join",
+                "description": "Join ist eine responsive Aufgabenmanagement-App mit einem intuitiven Kanban-Board. Aufgaben können erstellt, priorisiert, Kontakten zugewiesen und per Drag-and-drop organisiert werden. Die mit Angular, TypeScript und Supabase entwickelte Anwendung bietet außerdem Unteraufgaben, Fortschrittsanzeigen, Kontaktverwaltung und Echtzeit-Synchronisation.",
                 "implementation": "Implementierungsdetails Join",
                 "duration": "3 Wochen"
             },

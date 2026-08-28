@@ -45,7 +45,7 @@
             "introduction": "Take a look at the projects I've worked on and the skills I've applied along the way. Each project includes a brief overview, key information, and the opportunity to explore it in more detail.",
             "projectDetails": "Project details",
             "description": {
-                "join": "description join",
+                "join": "Join is a responsive task management app featuring an intuitive Kanban board. Users can create, prioritize and assign tasks, then organize them via drag and drop. Built with Angular, TypeScript and Supabase, the application also provides subtasks, progress tracking, contact management and real-time synchronization.",
                 "elPolloLoco": "A 2D side-scrolling jump-and-run game built with JavaScript and HTML5 Canvas, featuring object-oriented programming, sprite animations, collision detection and an exciting end boss battle.",
                 "pokemon": "An interactive Pokédex application built with JavaScript and the PokéAPI. Browse, search and explore Pokémon with dynamic data fetching and a responsive user interface."
             }
@@ -57,7 +57,7 @@
             "duration": "Duration:",
             "next": "Next Project",
             "join": {
-                "description": "decription join",
+                "description": "Join is a responsive task management app featuring an intuitive Kanban board. Users can create, prioritize and assign tasks, then organize them via drag and drop. Built with Angular, TypeScript and Supabase, the application also provides subtasks, progress tracking, contact management and real-time synchronization.",
                 "implementation": "Implementation Details join",
                 "duration": "3 Weeks"
             },
