@@ -68,7 +68,7 @@
     </div>
 </section>
 
-@if (isDialogOpen) {
+@if (isDialogOpen()) {
   <app-success-dialog
     (close)="closeDialog()"
   ></app-success-dialog>

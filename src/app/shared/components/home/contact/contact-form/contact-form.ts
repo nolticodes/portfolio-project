@@ -1,4 +1,10 @@
-import { Component, inject, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  inject,
+  NgZone,
+  Output,
+} from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
@@ -63,6 +69,8 @@ export function forbiddenMessageValidator(): ValidatorFn {
 export class ContactForm {
   @Output() mailSent = new EventEmitter<void>();
 
+  private readonly ngZone = inject(NgZone);
+
   submitted = false;
 
   userForm = new FormGroup({
@@ -98,7 +106,10 @@ export class ContactForm {
     }),
   });
 
-  /** Validates the form, sends its data to the server and emits an event after a successful request. */
+  /**
+ * Validates the form, sends its data to the server
+ * and emits an event after a successful request.
+ */
   async formSubmit(): Promise<void> {
     this.submitted = true;
 
@@ -126,20 +137,34 @@ export class ContactForm {
         }),
       });
 
-      const result: { success: boolean } = await response.json();
+      const result: { success: boolean } =
+        await response.json();
 
-      if (response.ok && result.success) {
-        this.formReset();
-        this.mailSent.emit();
-      } else {
+      if (!response.ok || !result.success) {
         console.error(
-          'Die Nachricht konnte nicht versendet werden.'
+          'Die Nachricht konnte nicht versendet werden.',
+          {
+            status: response.status,
+            result,
+          },
         );
+
+        return;
       }
+
+      this.ngZone.run(() => {
+        console.warn('MAIL SENT EVENT');
+
+        // Zuerst den Dialog öffnen lassen
+        this.mailSent.emit();
+
+        // Anschließend das Formular zurücksetzen
+        this.formReset();
+      });
     } catch (error) {
       console.error(
         'Netzwerkfehler beim Versenden:',
-        error
+        error,
       );
     }
   }
