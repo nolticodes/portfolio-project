@@ -73,14 +73,14 @@
 
 .testimonials_content_card {
     width: auto;
-    height: 260px;
+    height: 300px;
     position: relative;
     margin-left: -80px;
     z-index: 1;
 
     img {
         width: auto;
-        height: 260px;
+        height: 300px;
     }
 
     &:first-child {
@@ -114,18 +114,18 @@
     }
 
     &_text_overlay {
-        height: 260px;
+        height: 300px;
         width: 100%;
         position: absolute;
         top: 0;
-        padding: 30px 20px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
         &_comment {
             p {
-                font-size: 17px;
+                font-size: 18px;
                 font-weight: 250;
             }
 
@@ -265,19 +265,19 @@
     }
 
     .testimonials_content_card {
-        height: 160px;
+        height: 200px;
 
         img {
-            height: 160px;
+            height: 200px;
         }
 
         &_text_overlay {
-            height: 160px;
+            height: 200px;
             padding: 16px;
 
             &_comment {
                 p {
-                    font-size: 14px;
+                    font-size: 13.5px;
                     font-weight: 250;
                 }
             }
